@@ -1,0 +1,1316 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #1f0909;
+}
+.owl-prev,
+.owl-next {
+  color: #666666 !important;
+}
+.activemenu {
+  position: fixed !important;
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 111111111 !important;
+  background: rgba(255,255,255,0.67) !important;
+}
+.activeLogo {
+  max-width: 68% !important;
+  transition: 1s !important;
+}
+* {
+  word-break: break-word;
+}
+.activecaret {
+  display: block !important;
+}
+.activetabs {
+  color: black !important;
+  font-weight: bold !important;
+}
+.activetour {
+  background: #EEEEEE !important;
+  border-right: 4px solid #0bbcd6 !important;
+}
+#hr {
+  margin-bottom: 10px;
+  width: 37px;
+  border-top: 3px solid #ccc;
+}
+.activeTrans {
+  transition: 1s;
+  left: 0 !important;
+}
+.activeTab {
+  background: #0bbcd6 !important;
+  color: white !important;
+}
+.col4 {
+  padding: 5px;
+}
+@media (min-width: 992px) {
+  .col4 {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.khoinghiep .fullbox {
+  display: none;
+  background: rgba(0,0,0,0.63);
+  z-index: 1111111111111111111111111111111111111;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.khoinghiep .fullbox .box {
+  width: 700px;
+  margin: 50px auto;
+  background: white;
+  padding: 10px;
+  position: relative;
+}
+.khoinghiep .fullbox .box i {
+  position: absolute;
+  right: -8px;
+  top: -11px;
+  background: black;
+  color: white;
+  box-shadow: 0px 0px 5px black;
+  border: 3px solid white;
+  padding: 7px 10px;
+  border-radius: 100%;
+}
+.khoinghiep .fullbox .box form marquee {
+  color: red;
+  font-size: 15px;
+  margin: 10px 0;
+}
+.khoinghiep .fullbox .box form strong {
+  font-size: 15px;
+}
+.khoinghiep .fullbox .box form input[type="text"],
+.khoinghiep .fullbox .box form input[type="date"],
+.khoinghiep .fullbox .box form input[type="number"] {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+.khoinghiep .fullbox .box form p {
+  margin: 5px 0;
+  text-align: center;
+}
+.khoinghiep .fullbox .box form button {
+  margin: 0 auto;
+  background: #0bbcd6;
+  border: 1px solid #0bbcd6;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+}
+.khoinghiep .responMenu .sideMenu {
+  z-index: 1111111;
+  transition: 1s;
+  left: -100%;
+  position: fixed;
+  padding: 17px 0;
+  box-shadow: 0px 0px 8px;
+  height: 100%;
+  width: 278px;
+  background: #eee;
+}
+.khoinghiep .responMenu .sideMenu .closeMenu {
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  font-size: 20px;
+  padding: 2px 9px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  background: white;
+}
+.khoinghiep .responMenu .sideMenu #probRespon {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 0 15px;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li a {
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  color: #58595D;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li i {
+  transition: 0.5s;
+  position: absolute;
+  right: 10px;
+  font-size: 34px;
+  top: 1px;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li span {
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  color: #58595D;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li #prob2Respon {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li #prob2Respon >li {
+  padding: 7px 10px;
+}
+.khoinghiep .responMenu .sideMenu #probRespon >li #prob2Respon >li >a {
+  text-decoration: none;
+  color: #58595D;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 {
+  background: white;
+  width: 255px;
+  margin: 0 auto;
+  padding: 2px 0;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .phone {
+  margin-right: 7px;
+  display: inline-block;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .phone span {
+  font-size: 25px;
+  display: inline-block;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .phone .dt {
+  display: inline-block;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .phone .dt p {
+  color: #777777;
+  font-size: 9px;
+  margin: 0;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .phone .dt strong {
+  color: red;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .hotline {
+  display: inline-block;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .hotline span {
+  font-size: 25px;
+  display: inline-block;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .hotline .hl {
+  display: inline-block;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .hotline .hl p {
+  font-size: 9px;
+  margin: 0;
+  color: #777777;
+}
+.khoinghiep .responMenu .sideMenu .headerPhone1 .hotline .hl strong {
+  color: red;
+}
+.khoinghiep .responMenu .sideMenu .headerSearch1 {
+  margin: 25px 10px;
+  position: relative;
+}
+.khoinghiep .responMenu .sideMenu .headerSearch1 input[type="text"] {
+  width: 100%;
+  padding: 5px 5px;
+  background: #F7F7F7;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+}
+.khoinghiep .responMenu .sideMenu .headerSearch1 input[type="text"]:focus {
+  outline-offset: 0px;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.khoinghiep .responMenu .sideMenu .headerSearch1 i {
+  position: absolute;
+  top: 6px;
+  font-size: 20px;
+  color: #777777;
+  right: 10px;
+}
+.khoinghiep header .logoSearch {
+  padding: 10px 0;
+}
+.khoinghiep header .logoSearch .headerLogo {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+.khoinghiep header .logoSearch .headerLogo img {
+  max-width: 100%;
+}
+.khoinghiep header .logoSearch .headerLogo .icon-menu {
+  display: none;
+  color: #58595D;
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+.khoinghiep header .logoSearch .headerLogo i {
+  cursor: pointer;
+}
+.khoinghiep header .logoSearch .headerSearch {
+  margin: 25px 0;
+  position: relative;
+}
+.khoinghiep header .logoSearch .headerSearch input[type="text"] {
+  width: 100%;
+  padding: 5px 5px;
+  background: #F7F7F7;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+}
+.khoinghiep header .logoSearch .headerSearch input[type="text"]:focus {
+  outline-offset: 0px;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.khoinghiep header .logoSearch .headerSearch i {
+  position: absolute;
+  top: 6px;
+  font-size: 20px;
+  color: #777777;
+  right: 10px;
+}
+.khoinghiep header .logoSearch .headerPhone {
+  margin: 20px 0;
+}
+.khoinghiep header .logoSearch .headerPhone .phone {
+  margin-right: 10px;
+  display: inline-block;
+}
+.khoinghiep header .logoSearch .headerPhone .phone span {
+  font-size: 33px;
+  display: inline-block;
+}
+.khoinghiep header .logoSearch .headerPhone .phone .dt {
+  display: inline-block;
+}
+.khoinghiep header .logoSearch .headerPhone .phone .dt p {
+  color: #777777;
+  font-size: 11px;
+  margin: 0;
+}
+.khoinghiep header .logoSearch .headerPhone .phone .dt strong {
+  color: red;
+}
+.khoinghiep header .logoSearch .headerPhone .hotline {
+  display: inline-block;
+}
+.khoinghiep header .logoSearch .headerPhone .hotline span {
+  font-size: 33px;
+  display: inline-block;
+}
+.khoinghiep header .logoSearch .headerPhone .hotline .hl {
+  display: inline-block;
+}
+.khoinghiep header .logoSearch .headerPhone .hotline .hl p {
+  font-size: 11px;
+  margin: 0;
+  color: #777777;
+}
+.khoinghiep header .logoSearch .headerPhone .hotline .hl strong {
+  color: red;
+}
+.khoinghiep header #menu {
+  background: #3498DB;
+}
+.khoinghiep header #menu #prob {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.khoinghiep header #menu #prob >li {
+  position: relative;
+  padding: 12px 13px;
+  display: inline-block;
+}
+.khoinghiep header #menu #prob >li >a {
+  text-transform: uppercase;
+  color: #CDE6F6;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.khoinghiep header #menu #prob >li >a i {
+  margin-left: 5px;
+  color: #ccc;
+  font-weight: bold;
+}
+.khoinghiep header #menu #prob >li .active {
+  color: white;
+}
+.khoinghiep header #menu #prob >li >a:hover {
+  color: white;
+}
+.khoinghiep header #menu #prob >li #probb {
+  box-shadow: 0px 1px 12px;
+  z-index: 111;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 255px;
+  padding: 5px;
+  position: absolute;
+  border: 2px solid #CCC;
+  background: white;
+  margin: 0;
+  padding: 15px 20px;
+  list-style: none;
+}
+.khoinghiep header #menu #prob >li #probb i {
+  color: #ccc;
+  font-size: 30px;
+  position: absolute;
+  top: -22px;
+  left: 33px;
+}
+.khoinghiep header #menu #prob >li #probb >li {
+  padding: 0 5px;
+  display: block;
+}
+.khoinghiep header #menu #prob >li #probb >li >a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #666666;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.khoinghiep header #menu #prob >li:hover #probb {
+  display: block;
+}
+.khoinghiep .content .titlePage {
+  padding: 35px 0;
+  margin-bottom: 21px;
+}
+.khoinghiep .content .titlePage #title1 a {
+  margin-right: 10px;
+  color: #58595D;
+  font-size: 17px;
+}
+.khoinghiep .content .titlePage #title1 #name1 {
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+}
+.khoinghiep .content .titlePage #sort {
+  float: right;
+  font-size: 15px;
+  color: #58595D;
+}
+.khoinghiep .content .titlePage #sort select {
+  color: black;
+  padding: 5px 11px;
+  background: #eee;
+}
+.khoinghiep .content .contCategories {
+  margin-bottom: 50px;
+}
+.khoinghiep .content .contCategories #titleCate {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: #9b59b6;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding: 5px 0;
+}
+.khoinghiep .content .contCategories #titleCate .iconCate {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+.khoinghiep .content .contCategories .titleList {
+  margin: 10px 0 !important;
+  border-bottom: none !important;
+  font-size: 17px !important;
+  text-transform: uppercase;
+  color: black !important;
+  font-weight: bold !important;
+  letter-spacing: 1.5px !important;
+}
+.khoinghiep .content .contCategories .titleList #hr {
+  margin: 10px 0;
+}
+.khoinghiep .content .contCategories .cateList {
+  border: 1px solid #ccc;
+  padding: 0;
+  background: #EFEFEF;
+}
+.khoinghiep .content .contCategories .cateList a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  display: block;
+  font-size: 13px;
+  color: #1f0909;
+  border-bottom: 1px solid #ccc;
+}
+.khoinghiep .content .contCategories .cateList a i {
+  color: #3498DB;
+  margin-right: 10px;
+}
+.khoinghiep .content .contCategories .cateList a:hover {
+  color: white;
+  background: #666666;
+}
+.khoinghiep .content .contCategories .cateList a:hover i {
+  color: white;
+}
+.khoinghiep .content .mainTop .newUpdate #titleUpdate {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: #3498DB;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding: 5px 0;
+}
+.khoinghiep .content .mainTop .newUpdate .updateContent .itemUpdate {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.khoinghiep .content .mainTop .newUpdate .updateContent .itemUpdate #aimg {
+  padding: 7px 0;
+  display: block;
+}
+.khoinghiep .content .mainTop .newUpdate .updateContent .itemUpdate #aimg img {
+  width: 100%;
+}
+.khoinghiep .content .mainTop .newUpdate .updateContent .itemUpdate .itemupCont a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #1f0909;
+}
+.khoinghiep .content .mainTop .calendarGo #titleca {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: #db7b34;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding: 5px 0;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent {
+  width: 261px;
+  margin: 0 auto;
+  position: relative;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen {
+  text-align: center;
+  height: 430px;
+  overflow-x: auto;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .scroll {
+  width: 5px;
+  margin: 0 auto;
+  height: 100%;
+  left: 49%;
+  background: #025149;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall {
+  position: relative;
+  z-index: 11111111;
+  height: 91px;
+  padding: 13px 0;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall >span {
+  padding: 5px;
+  border-radius: 100%;
+  display: block;
+  background: white;
+  width: 61px;
+  height: 60px;
+  margin: 0 auto;
+  border: 5px solid #025149;
+  position: tr;
+  position: relative;
+  left: 9px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall >span span {
+  border-radius: 100%;
+  background: #38AAB7;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  width: 41px;
+  height: 40px;
+  display: block;
+  padding: 10px 0;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .cicrle {
+  width: 22px;
+  height: 22px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: #29B246;
+  position: absolute;
+  left: 49%;
+  top: 30px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .cicrle1 {
+  width: 22px;
+  height: 22px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: orange;
+  position: absolute;
+  left: 49%;
+  top: 30px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenleft {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding: 20px 0;
+  color: #29B246;
+  font-size: 17px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenleft1 {
+  text-align: right;
+  width: 50%;
+  float: left;
+  padding: 20px 0;
+  color: orange;
+  font-size: 17px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenright {
+  width: 50%;
+  float: left;
+  padding-left: 30px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenright p {
+  position: relative;
+  background: #29B246;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenright p i {
+  position: absolute;
+  right: 100%;
+  top: 15px;
+  color: #29B246;
+  font-size: 25px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenright1 {
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenright1 p {
+  position: relative;
+  background: orange;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.khoinghiep .content .mainTop .calendarGo .calContent .itemCalen .itemCalensmall .calenright1 p i {
+  position: absolute;
+  left: 100%;
+  top: 15px;
+  color: orange;
+  font-size: 25px;
+}
+.khoinghiep .content .bannerPr {
+  margin: 50px 0;
+}
+.khoinghiep .content .bannerPr img {
+  width: 100%;
+}
+.khoinghiep .content .textPr {
+  text-align: center;
+  padding: 30px 0;
+  background: #438034;
+}
+.khoinghiep .content .textPr span {
+  color: white;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.khoinghiep .content .textPr a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 6px;
+  background: orange;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.khoinghiep .content .Tours {
+  margin-bottom: 20px;
+  background: #eee;
+}
+.khoinghiep .content .Tours #nameTour {
+  padding: 25px 0;
+  border-bottom: 2px solid #ccc;
+  color: #3498DB;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.khoinghiep .content .Tours .listTour {
+  padding-bottom: 30px;
+  margin: 10px 0;
+}
+.khoinghiep .content .Tours .listTour .listtourItem {
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px;
+  background: white;
+  padding: 10px;
+}
+.khoinghiep .content .Tours .listTour .listtourItem #imgsale {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+.khoinghiep .content .Tours .listTour .listtourItem #imgsale img {
+  width: 100%;
+  height: 200px;
+}
+.khoinghiep .content .Tours .listTour .listtourItem #imgsale #saleTour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e81d1d;
+  color: white;
+  padding: 9px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.khoinghiep .content .Tours .listTour .listtourItem #imgsale #monthTour {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #db7b34;
+  color: white;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 13px;
+  width: 62px;
+  text-align: center;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont {
+  padding: 10px 12px;
+  background: #EFEFEF;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .typeTour {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #A0A0A0;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .typeName {
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #1f0909;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .timePrice .time {
+  width: 50%;
+  float: left;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .timePrice .time p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #A0A0A0;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .timePrice .price {
+  padding: 5px 0;
+  text-align: right;
+  width: 50%;
+  float: left;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .timePrice .price p {
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+.khoinghiep .content .Tours .listTour .listtourItem .listtourCont .timePrice .price del {
+  margin: 5px 0;
+  color: #A0A0A0;
+}
+.khoinghiep .content .Tours .listTour .tourpageList {
+  box-shadow: none;
+  padding: 0;
+}
+.khoinghiep .content .Tours #tourmore {
+  text-transform: uppercase;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}
+.khoinghiep .content .feeling {
+  display: flex;
+}
+.khoinghiep .content .feeling h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 78%;
+  padding: 0 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.khoinghiep .content .feeling #a {
+  height: 2px;
+  background: #ccc;
+  width: 100%;
+  position: relative;
+  top: 29px;
+}
+.khoinghiep .content .slideFeel {
+  padding: 50px 0 105px 0;
+}
+.khoinghiep .content .slideFeel .feelAvatar {
+  text-align: center;
+}
+.khoinghiep .content .slideFeel .feelAvatar img {
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+}
+.khoinghiep .content .slideFeel .feelCont #star i {
+  color: #d69929;
+  font-size: 21px;
+}
+.khoinghiep .content .slideFeel .feelCont #feelName {
+  font-weight: bold;
+  font-size: 20px;
+}
+.khoinghiep .content .slideFeel .feelCont #feelCont {
+  font-style: italic;
+}
+.khoinghiep .content .shouldKnow .tabKnow {
+  border-bottom: 1px solid #3498DB;
+}
+.khoinghiep .content .shouldKnow .tabKnow #know,
+.khoinghiep .content .shouldKnow .tabKnow #know1,
+.khoinghiep .content .shouldKnow .tabKnow #know2 {
+  background: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 14px 9px;
+  font-weight: bold;
+  color: #1f0909;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1.5px;
+  border: none;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNews {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNews .knownewsImg {
+  display: block;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNews .knownewsImg img {
+  width: 100%;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNews .knownewsCont a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNews .knownewsCont p {
+  line-height: 1.5;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNewsmore .itemMore {
+  background: #EEEEEE;
+  padding: 16px 18px;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNewsmore .itemMore #img1 {
+  display: block;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNewsmore .itemMore #img1 img {
+  height: 60px;
+  width: 100%;
+}
+.khoinghiep .content .shouldKnow .knowCont .knowNewsmore .itemMore #cont1 {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.khoinghiep .content .imgPR img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.khoinghiep .content .videoimg .videos #titleVideo {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: #3498DB;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding: 5px 0;
+}
+.khoinghiep .content .videoimg .images #titleImg {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: #3498DB;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding: 5px 0;
+}
+.khoinghiep .content .videoimg .images .imgList .imgItem {
+  height: 130px;
+  margin-bottom: 25px;
+}
+.khoinghiep .content .videoimg .images .imgList .imgItem a {
+  position: relative;
+  display: block;
+}
+.khoinghiep .content .videoimg .images .imgList .imgItem a img {
+  min-height: 130px;
+  width: 100%;
+}
+.khoinghiep .content .videoimg .images .imgList .imgItem a p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.48);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+.khoinghiep .content .Exp .expMain {
+  border-right: 1px solid #ccc;
+}
+.khoinghiep .content .Exp .expMain .expItem {
+  margin: 20px 0;
+}
+.khoinghiep .content .Exp .expMain .expItem #expImg {
+  display: block;
+  position: relative;
+}
+.khoinghiep .content .Exp .expMain .expItem #expImg img {
+  width: 100%;
+}
+.khoinghiep .content .Exp .expMain .expItem #expImg #expMonth {
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  padding: 0px 12px;
+  border: 2px solid #0bbcd6;
+  background: white;
+  font-weight: bold;
+  text-align: center;
+}
+.khoinghiep .content .Exp .expMain .expItem .expitemCont {
+  padding: 10px 0;
+}
+.khoinghiep .content .Exp .expMain .expItem .expitemCont a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.khoinghiep .content .Exp .expSide h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.khoinghiep .content .Exp .expSide #hr {
+  margin-bottom: 10px;
+  width: 37px;
+  border-top: 3px solid #ccc;
+}
+.khoinghiep .content .Exp .expSide .expsideCont .expsideItem {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+.khoinghiep .content .Exp .expSide .expsideCont .expsideItem #expsideImg {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+.khoinghiep .content .Exp .expSide .expsideCont .expsideItem #expsideImg img {
+  border: 1px solid #ccc;
+  max-height: 45px;
+  width: 100%;
+}
+.khoinghiep .content .Exp .expSide .expsideCont .expsideItem .expsideText {
+  height: 56px;
+  overflow: hidden;
+}
+.khoinghiep .content .Exp .expSide .expsideCont .expsideItem .expsideText a {
+  text-decoration: none;
+  color: black;
+}
+.khoinghiep .content .tourHot h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.khoinghiep .content .tourHot #hr {
+  margin-bottom: 10px;
+  width: 37px;
+  border-top: 3px solid #ccc;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem {
+  padding: 5px 0;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem #tourhotImg {
+  display: block;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem #tourhotImg img {
+  width: 100%;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem .tourhotText #tourhotName {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem .tourhotText del {
+  font-size: 15px;
+  color: #ccc;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem .tourhotText p {
+  font-size: 17px;
+  font-weight: bold;
+  color: red;
+}
+.khoinghiep .content .tourHot .tourhotCont .tourhotItem:last-child {
+  border-bottom: none;
+}
+.khoinghiep .content .detailCont #titleDetail {
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: bold;
+}
+.khoinghiep .content .detailCont .detailLeft .leftTitle #titlea1 {
+  color: black;
+  text-transform: uppercase;
+}
+.khoinghiep .content .detailCont .detailLeft .leftTitle #titlea2 {
+  text-transform: uppercase;
+  color: black;
+}
+.khoinghiep .content .detailCont .detailLeft #titleh4 {
+  font-size: 25px;
+  color: #438034;
+  font-weight: bold;
+}
+.khoinghiep .content .detailCont .detailRight {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #3498DB;
+}
+.khoinghiep .content .detailCont .detailRight #titleh5 {
+  line-height: 1.5;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+.khoinghiep .content .detailCont .detailRight .detailTime {
+  padding: 15px 0;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+.khoinghiep .content .detailCont .detailRight .detailTime span {
+  color: white;
+}
+.khoinghiep .content .detailCont .detailRight .pricebook {
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  padding: 20px 0;
+}
+.khoinghiep .content .detailCont .detailRight .pricebook #price {
+  color: white;
+}
+.khoinghiep .content .detailCont .detailRight .pricebook #price b {
+  color: yellow;
+  font-size: 35px;
+  font-weight: bold;
+}
+.khoinghiep .content .detailCont .detailRight .pricebook del {
+  color: white;
+}
+.khoinghiep .content .detailCont .detailRight .pricebook #kh {
+  color: white;
+}
+.khoinghiep .content .detailCont .detailRight .pricebook #btn {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 10px;
+  background: orange;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+.khoinghiep .content .detailCont #form {
+  margin: 15px 0;
+  border: 3px dotted #0bbcd6;
+  padding: 15px;
+}
+.khoinghiep .content .detailCont #form h1 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.khoinghiep .content .detailCont #form label {
+  font-size: 16px;
+}
+.khoinghiep .content .detailCont #form .submit {
+  text-align: center;
+}
+.khoinghiep .content .detailCont #form .submit input[type="submit"] {
+  background: #3498DB;
+  color: white;
+  border: none;
+  padding: 10px 13px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 22px 0;
+}
+.khoinghiep .content .detailCont .tourDay {
+  margin: 20px 0;
+}
+.khoinghiep .content .detailCont .tourDay #p {
+  border-top: 1px solid #ccc;
+}
+.khoinghiep .content .detailCont .tourDay #p #show {
+  line-height: 2.5;
+  padding: 8px 0;
+  text-transform: uppercase;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  border-top: 3px solid #0bbcd6;
+}
+.khoinghiep .content .detailCont .tourDay .Days {
+  margin: 30px 0;
+}
+.khoinghiep .content .detailCont .tourDay .Days .dayLeft {
+  border-right: 1px solid #ccc;
+}
+.khoinghiep .content .detailCont .tourDay .Days .dayLeft p {
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  position: relative;
+  padding: 10px;
+  background: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.khoinghiep .content .detailCont .tourDay .Days .dayLeft p i {
+  display: none;
+  position: absolute;
+  font-size: 36px;
+  color: #0bbcd6;
+  right: -1px;
+  top: 2px;
+}
+.khoinghiep .content .detailCont .tourDay .Days .dayRight .as {
+  display: none;
+}
+.khoinghiep .content .detailCont .tabDetailtour >p {
+  text-align: center;
+}
+.khoinghiep .content .detailCont .tabDetailtour >p span {
+  border-bottom: 2px solid #0bbcd6;
+  line-height: 2.5;
+  padding: 13px;
+}
+.khoinghiep .content .detailCont .tabDetailtour >p .tb {
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 15px;
+  color: #777777;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+}
+.khoinghiep .content .detailCont .tabDetailtour >p .tb i {
+  display: none;
+  color: #0bbcd6;
+  font-size: 20px;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+}
+.khoinghiep .content .detailCont .tabDetailtour >p .tb:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.khoinghiep .content .detailCont .tabDetailtour .tabCont {
+  margin: 60px 0;
+}
+.khoinghiep .content .detailCont .tabDetailtour .tabCont .ndt {
+  display: none;
+}
+.khoinghiep footer {
+  background: #424A9C;
+}
+.khoinghiep footer .footerItem {
+  padding-bottom: 55px;
+}
+.khoinghiep footer .footerItem h2 {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+}
+.khoinghiep footer .footerItem .footerCont #a2 {
+  text-decoration: none;
+  padding: 7px 0;
+  display: block;
+  border-bottom: 1px dotted white;
+  font-size: 17px;
+  color: white;
+}
+.khoinghiep footer .footerItem .footerCont #footPhone {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: yellow;
+}
+.khoinghiep footer .footerItem .footerCont #footTime {
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+.khoinghiep footer .footerItem .footerCont span {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.khoinghiep footer .copyright {
+  background: #0bbcd6;
+  padding: 15px 0;
+}
+.khoinghiep footer .copyright p {
+  margin: 0;
+  color: white;
+}
+.khoinghiep footer .copyright p a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+@media (min-width: 992px) {
+  .khoinghiep .responMenu {
+    display: none !important;
+  }
+  .khoinghiep .content .contCategories .cateList {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) {
+  .khoinghiep .content .tourHot .tourhotCont .tourhotItem {
+    text-align: center;
+  }
+  .khoinghiep .content .tourHot .tourhotCont .tourhotItem #tourhotImg img {
+    width: 350px;
+  }
+  .khoinghiep header .logoSearch .headerLogo .icon-menu {
+    display: block;
+  }
+  .khoinghiep .content .Tours .listTour .listtourItem #imgsale img {
+    height: auto;
+  }
+  .khoinghiep header .logoSearch .headerSearch,
+  .khoinghiep header .logoSearch .headerPhone,
+  .khoinghiep header #menu {
+    display: none;
+  }
+  .khoinghiep .content .textPr {
+    padding: 30px 10px;
+  }
+  .khoinghiep .content .textPr span {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .khoinghiep .content .textPr a {
+    margin: 20px 0;
+    padding: 15px 6px;
+  }
+  .khoinghiep .content .feeling #a {
+    display: none;
+  }
+  .khoinghiep .content .feeling h2 {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .khoinghiep .content .slideFeel .feelCont #star {
+    text-align: center;
+  }
+  .khoinghiep .content .slideFeel .feelCont #feelName {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+  }
+  .iconCate {
+    display: block !important;
+  }
+  .khoinghiep .content .contCategories .cateList {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .khoinghiep .content .shouldKnow .tabKnow #know,
+  .khoinghiep .content .shouldKnow .tabKnow #know1,
+  .khoinghiep .content .shouldKnow .tabKnow #know2 {
+    background: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-weight: bold;
+    color: black;
+    font-size: 7px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+@media (max-width: 468px) {
+  .khoinghiep .content .tourHot .tourhotCont .tourhotItem #tourhotImg img {
+    width: 100%;
+  }
+}

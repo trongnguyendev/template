@@ -1,0 +1,1374 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOURIST</title>
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">       
+        <script src="js/owl.carousel.js"></script>
+        <link rel="stylesheet" href="css/scrollPress.min.css">
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src="js/mystyle.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="khoinghiep">
+            <!--<> menu responsive <>-->
+            <div class="responMenu" id="modal">
+                <nav class="sideMenu">
+                    <div class="closeMenu">
+                        <i class="fa fa-remove"></i>
+                    </div>
+                    <ul id="probRespon">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li>
+
+                            <a href="pagelistTour.html">Tour nước ngoài</a>
+                            <i class="fa fa-angle-down showprob2"></i>
+                            <ul id="prob2Respon">
+                                <li><a href="pagelistTour.html">Tour Châu Á</a></li>
+                                <li><a href="pagelistTour.html">Đông Nam Á</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Âu</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Úc</a></li>
+                            </ul>
+                        </li>
+                        <li>
+
+                            <a href="pagelistTour.html">Tour trong nước</a>
+                            <i class="fa fa-angle-down showprob2"></i>
+                            <ul id="prob2Respon">
+                                <li><a href="pagelistTour.html">Tour Châu Á</a></li>
+                                <li><a href="pagelistTour.html">Đông Nam Á</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Âu</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Úc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pageIntro.html">Giới thiệu</a></li>
+                        <li>
+
+                            <a href="pageExp.html">Cẩm nang</a>
+                            <i class="fa fa-angle-down showprob2"></i>
+                            <ul id="prob2Respon">
+                                <li><a href="pageExp.html">Tour Châu Á</a></li>
+                                <li><a href="pageExp.html">Đông Nam Á</a></li>
+                                <li><a href="pageExp.html">Tour Châu Âu</a></li>
+                                <li><a href="pageExp.html">Tour Châu Úc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pageContact.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="headerPhone1">
+                        <div class="phone">
+                            <span class="fa fa-phone-square"></span>
+                            <div class="dt">
+                                <p>ĐIỆN THOẠI</p>
+                                <strong>02583 890 514</strong>
+                            </div>
+                        </div>
+                        <div class="hotline">
+                            <span class="fa fa-volume-control-phone"></span>
+                            <div class="hl">
+                                <p>HOTLINE</p>
+                                <strong>02583 890 514</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headerSearch1">
+                        <form>
+                            <input type="text" placeholder="Nhập địa điểm bạn muốn đi...">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <script>
+                var modal = document.getElementById('modal');
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+            <!--<> end menu responsive <>-->
+            <header>
+                <div class="container">
+                    <div class="logoSearch">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="headerLogo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png">
+
+                                    </a>
+                                    <i class="fa fa-bars icon-menu"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="headerSearch">
+                                    <input type="text" placeholder="Nhập địa điểm bạn muốn đi...">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="headerPhone">
+                                    <div class="phone">
+                                        <span class="fa fa-phone-square"></span>
+                                        <div class="dt">
+                                            <p>ĐIỆN THOẠI</p>
+                                            <strong>02583 890 514</strong>
+                                        </div>
+                                    </div>
+                                    <div class="hotline">
+                                        <span class="fa fa-volume-control-phone"></span>
+                                        <div class="hl">
+                                            <p>HOTLINE</p>
+                                            <strong>02583 890 514</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!--<> menu <>-->
+                <nav id="menu">
+                    <div class="container">
+                        <ul id="prob">
+                            <li><a href="index.html" class="active">Trang chủ</a></li>
+                            <li>
+                                <a href="pagelistTour.html">Tour nước ngoài<i class="fa fa-angle-down"></i></a>
+                                <ul id="probb">
+                                    <i class="fa fa-caret-up"></i>
+                                    <li><a href="pagelistTour.html">Tour Châu Á</a></li>
+                                    <li><a href="pagelistTour.html">Đông Nam Á</a></li>
+                                    <li><a href="pagelistTour.html">Tour Châu Âu</a></li>
+                                    <li><a href="pagelistTour.html">Tour Châu Úc</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="pagelistTour.html">Tour trong nước<i class="fa fa-angle-down"></i></a>
+                                <ul id="probb">
+                                    <i class="fa fa-caret-up"></i>
+                                    <li><a href="pagelistTour.html">Tour Miền Nam</a></li>
+                                    <li><a href="pagelistTour.html">Đông Miền Bắc</a></li>
+                                    <li><a href="pagelistTour.html">Tour Xe Đạp</a></li>
+                                    <li><a href="pagelistTour.html">Tour Leo Núi</a></li>
+                                    <li><a href="pagelistTour.html">Tour Trải Nghiệm</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pageIntro.html">Giới thiệu</a></li>
+                            <li>
+                                <a href="pageExp.html">Cẩm nang<i class="fa fa-angle-down"></i></a>
+                                <ul id="probb">
+                                    <i class="fa fa-caret-up"></i>
+                                    <li><a href="pageExp.html">Kinh nghiệm du lịch</a></li>
+                                    <li><a href="pageExp.html">Những điểm đến</a></li>
+                                    <li><a href="pageExp.html">Thông tin du lịch</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="pageContact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--<> end menu <>-->
+            </header>
+
+            <!--<> slideshow <>-->
+            <div class="slideShow">
+                <section id="demos" style="overflow:hidden;">
+                    <div class="large-12 columns" >
+                        <div class="owl-carousel owl-theme slide1">
+                            <div class="item">
+                                <img src="images/imgSlid1.jpg" style="width: 100%;">
+                            </div>
+                            <div class="item">
+                                <img src="images/imgSlide2.jpg" style="width: 100%;">
+                            </div>
+                            <div class="item">
+                                <img src="images/imgSlid.jpg" style="width: 100%;">
+                            </div>
+                            <div class="item">
+                                <img src="images/imgSlid1.jpg" style="width: 100%;">
+                            </div>
+                            <div class="item">
+                                <img src="images/imgSlide2.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+            <!--<> end slideshow <>-->
+
+            <div class="content">
+
+                <!--<> Danh mục tour <>-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="contCategories">
+                                <h1 id="titleCate">
+                                    <i class="fa fa-yelp"></i>
+                                    Danh mục tour
+                                    <i class="fa fa-bars iconCate"></i>
+                                </h1>
+                                <div class="cateList">
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        Lịch khởi hành
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        Đông nam á
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour châu á
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour châu âu
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour châu úc
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour biển đảo
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour đạp xe
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour leo núi
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour miền bắc
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour miền nam
+                                    </a>
+                                    <a href="#" >
+                                        <i class="fa fa-calendar"></i>
+                                        tour trải nghiệm
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="mainTop">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="newUpdate">
+                                            <h1 id="titleUpdate">
+                                                <i class="fa fa-newspaper-o"></i>
+                                                Mới cập nhật
+                                            </h1>
+                                            <div class="updateContent">
+                                                <div class="itemUpdate">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <a id="aimg" href="#">
+                                                                <img src="images/img.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="itemupCont">
+                                                                <a href="#">Sắp đến mùa hoa tam giác mạch Hà Giang rồi, rủ "cạ cứng" thôi</a>
+                                                                <p>
+                                                                    Những cánh đồng hoa tam giác mạch vùng cao nguyên đá Hà Giang đang sắp bung nở rực rỡ, chắc chắn nhiều người sẽ sốt sắng lên kế hoạch để làm một...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="itemUpdate">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <a id="aimg" href="#">
+                                                                <img src="images/img1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="itemupCont">
+                                                                <a href="#">Sắp đến mùa hoa tam giác mạch Hà Giang rồi, rủ "cạ cứng" thôi</a>
+                                                                <p>
+                                                                    Những cánh đồng hoa tam giác mạch vùng cao nguyên đá Hà Giang đang sắp bung nở rực rỡ, chắc chắn nhiều người sẽ sốt sắng lên kế hoạch để làm một...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="itemUpdate">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <a id="aimg" href="#">
+                                                                <img src="images/img2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="itemupCont">
+                                                                <a href="#">Sắp đến mùa hoa tam giác mạch Hà Giang rồi, rủ "cạ cứng" thôi</a>
+                                                                <p>
+                                                                    Những cánh đồng hoa tam giác mạch vùng cao nguyên đá Hà Giang đang sắp bung nở rực rỡ, chắc chắn nhiều người sẽ sốt sắng lên kế hoạch để làm một...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="calendarGo">
+                                            <h1 id="titleca">
+                                                <i class="fa fa-calendar"></i>
+                                                LỊCH KHỞI HÀNH
+                                            </h1>
+                                            <div class="calContent">
+                                                <div class="itemCalen">
+                                                    <div class="scroll"></div>
+                                                    <div style="position: absolute;width: 100%;left: 0;top: 0;height:430px;overflow-x: auto;">
+                                                        <div class="itemCalensmall">
+                                                            <span>
+                                                                <span>2017</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="itemCalensmall">
+                                                            <div class="cicrle1"></div>
+
+                                                            <div class="calenright1">
+                                                                <p>
+                                                                    Tour Thụy Sĩ – VatiCan 12 Ngày 11 Đêm
+                                                                    <i class="fa fa-caret-right"></i>
+                                                                </p>
+                                                            </div>
+                                                            <div class="calenleft1">
+                                                                <p>27/07/2017</p>
+                                                            </div>
+                                                            <div style="clear: both;"></div>
+                                                        </div>
+                                                        <div class="itemCalensmall">
+                                                            <div class="cicrle"></div>
+                                                            <div class="calenleft">
+                                                                <p>27/07/2017</p>
+                                                            </div>
+                                                            <div class="calenright">
+                                                                <p>
+                                                                    Tour Thụy Sĩ – VatiCan 12 Ngày 11 Đêm
+                                                                    <i class="fa fa-caret-left"></i>
+                                                                </p>
+                                                            </div>
+                                                            <div style="clear: both;"></div>
+                                                        </div>
+                                                        <div class="itemCalensmall">
+                                                            <div class="cicrle1"></div>
+
+                                                            <div class="calenright1">
+                                                                <p>
+                                                                    Tour Thụy Sĩ – VatiCan 12 Ngày 11 Đêm
+                                                                    <i class="fa fa-caret-right"></i>
+                                                                </p>
+                                                            </div>
+                                                            <div class="calenleft1">
+                                                                <p>27/07/2017</p>
+                                                            </div>
+                                                            <div style="clear: both;"></div>
+                                                        </div>
+                                                        <div class="itemCalensmall">
+                                                            <div class="cicrle"></div>
+                                                            <div class="calenleft">
+                                                                <p>27/07/2017</p>
+                                                            </div>
+                                                            <div class="calenright">
+                                                                <p>
+                                                                    Tour Thụy Sĩ – VatiCan 12 Ngày 11 Đêm
+                                                                    <i class="fa fa-caret-left"></i>
+                                                                </p>
+                                                            </div>
+                                                            <div style="clear: both;"></div>
+                                                        </div>
+                                                        <div class="itemCalensmall">
+                                                            <div class="cicrle1"></div>
+
+                                                            <div class="calenright1">
+                                                                <p>
+                                                                    Tour Thụy Sĩ – VatiCan 12 Ngày 11 Đêm
+                                                                    <i class="fa fa-caret-right"></i>
+                                                                </p>
+                                                            </div>
+                                                            <div class="calenleft1">
+                                                                <p>27/07/2017</p>
+                                                            </div>
+                                                            <div style="clear: both;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bannerPr">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/bannergif.gif">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/bannergif1.gif">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/bannergif.gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textPr">
+                        <span>Bạn muốn tổ chức tour đoàn riêng cho doanh nghiệp và gia đình</span>
+                        <a href="#">book tour ngay</a>
+                    </div>
+                </div>
+                <!--<> end danh mục tour <>-->
+
+                <!--<> Danh sách tour <>-->
+                <div class="Tours">
+                    <h1 id="nameTour">
+                        tour nổi bật
+                    </h1>
+                    <div class="container">
+                        <div class="listTour">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist2.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist3.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Tours">
+                    <h1 id="nameTour">
+                        tour châu á
+                    </h1>
+                    <div class="container">
+                        <div class="listTour">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist2.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist3.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="#" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Tours">
+                    <h1 id="nameTour">
+                        tour châu âu
+                    </h1>
+                    <div class="container">
+                        <div class="listTour">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist2.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist3.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem">
+                                        <a href="pagedetailTour.html" id="imgsale">
+                                            <img src="images/imglist.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="pagedetailTour.html" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<> end <>-->
+
+                <!--<> Feel customer <>-->
+                <div class="container">
+                    <div class="feeling">
+                        <div id="a"></div>
+                        <h2>cảm nhận khách hàng</h2>
+                        <div id="a"></div>
+                    </div>
+                    <div class="slideFeel">                         
+                        <div class="large-12 columns">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="feelAvatar">
+                                                <img src="images/gv1.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="feelCont">
+                                                <p id="star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </p>
+                                                <p id="feelName">Minh Trọng Nguyễn - Singapore - Malaysia</p>
+                                                <p id="feelCont">
+                                                    Với 6 ngày mà tôi có thể tham quan tìm hiểu 2 đất nước phát triển nhất ĐNÁ. Hy vọng sẽ được đồng hành cùng AVITOUR trong hành tình sắp tới của mình.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="feelAvatar">
+                                                <img src="images/gv2.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="feelCont">
+                                                <p id="star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </p>
+                                                <p id="feelName">Lê Thị Hoàng Ái - Singapore - Malaysia</p>
+                                                <p id="feelCont">
+                                                    Với 6 ngày mà tôi có thể tham quan tìm hiểu 2 đất nước phát triển nhất ĐNÁ. Hy vọng sẽ được đồng hành cùng AVITOUR trong hành tình sắp tới của mình.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--<> end feel customer <>-->
+
+                <!--<> more <>-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="shouldKnow">
+                                <div class="tabKnow">
+                                    <button id="know" class="js activeTab">những điểm đến</button>
+                                    <button id="know1" class="js">thông tin hữu ích</button>
+                                    <button id="know2" class="js">kinh nghiệm du lịch</button>
+                                </div>
+                                <div class="knowCont knowA">
+                                    <div class="knowNews">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <a href="#" class="knownewsImg">
+                                                    <img src="images/img.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="knownewsCont">
+                                                    <a href="#">Sắp đến mùa hoa tam giác Hà Giang rồi, rủ "cạ cứng" thôi</a>
+                                                    <p>Những cánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đang cánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đangcánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đangcánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đang sắp bung nở rực rỡ, chẵn chắn nhiều người sẽ sốt sắng lên kế hoạch để làm một chuyến du lịch Hà Giang "ngay và luôn". Mùa tam giác mạch ở ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="knowNewsmore">
+                                        <div class="row" style="padding: 0 8px;">
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knowCont knowB" style="display: none;">
+                                    <div class="knowNews">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <a href="#" class="knownewsImg">
+                                                    <img src="images/img2.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="knownewsCont">
+                                                    <a href="#">Sắp đến mùa hoa tam giác Hà Giang rồi, rủ "cạ cứng" thôi</a>
+                                                    <p>Những cánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đang cánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đangcánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đangcánh đồng hoa tam giác mjach vùng cao nguyên đá Hà Giang đang sắp bung nở rực rỡ, chẵn chắn nhiều người sẽ sốt sắng lên kế hoạch để làm một chuyến du lịch Hà Giang "ngay và luôn". Mùa tam giác mạch ở ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="knowCont knowC" style="display: none;">
+
+
+                                    <div class="knowNewsmore">
+                                        <div class="row" style="padding: 0 8px;">
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img1.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col4">
+                                                <div class="itemMore">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="#" id="img1">
+                                                                <img src="images/img2.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <a href="#" id="cont1">
+                                                                Những  mjach vùng cao nguyên đá Hà Giang
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="videoimg">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="videos">
+                                            <h1 id="titleVideo">
+                                                <i class="fa fa-video-camera"></i>
+                                                Video
+                                            </h1>
+                                            <!--<> video <>-->
+                                            <iframe width="100%" height="250px" src="https://www.youtube.com/embed/EJYUuDApwSY" frameborder="0" allowfullscreen></iframe>                                              
+                                            <!--<> end video <>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="images">
+                                            <h1 id="titleImg">
+                                                <i class="fa fa-image"></i>
+                                                Hình ảnh
+                                            </h1>
+                                            <div class="imgList">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="imgItem">
+                                                            <a href="#">
+                                                                <img src="images/img1.jpg">
+                                                                <p>Sắp đến mùa hoa tam giác Hà Giang rồi, rủ "cạ cứng" thôi</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="imgItem">
+                                                            <a href="#">
+                                                                <img src="images/img.jpg">
+                                                                <p>Sắp đến mùa hoa tam giác Hà Giang rồi, rủ "cạ cứng" thôi</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="imgItem">
+                                                            <a href="#">
+                                                                <img src="images/img2.jpg">
+                                                                <p>Sắp đến mùa hoa tam giác Hà Giang rồi, rủ "cạ cứng" thôi</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="imgItem">
+                                                            <a href="#">
+                                                                <img src="images/img.jpg">
+                                                                <p>Sắp đến mùa hoa tam giác Hà Giang rồi, rủ "cạ cứng" thôi</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="imgPR">
+                                <img src="images/bannerpr.jpg">
+                                <img src="images/bannerpr1.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--<> end more <>-->
+
+            </div>
+
+            <!--<> footer <>-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>về chúng tôi</h2>
+                                <div class="footerCont">
+                                    <a href="#" id="a2">Giới thiệu</a>
+                                    <a href="#" id="a2">Tin tức</a>
+                                    <a href="#" id="a2">Tuyển dụng</a>
+                                    <a href="#" id="a2">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>thông tin cần biết</h2>
+                                <div class="footerCont">
+                                    <a href="#" id="a2">Điều kiện điều khoản</a>
+                                    <a href="#" id="a2">Phương thức thanh toán</a>
+                                    <a href="#" id="a2">Bảo mật thông tin khách hàng</a>
+                                    <a href="#" id="a2">Chính sách quy định</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>liên kết hữu ích</h2>
+                                <div class="footerCont">
+                                    <a href="#" id="a2">Tour Châu Á</a>
+                                    <a href="#" id="a2">Tour Châu Âu</a>
+                                    <a href="#" id="a2">Tour Châu Úc</a>
+                                    <a href="#" id="a2">Tour Việt Nam</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>về chúng tôi</h2>
+                                <div class="footerCont">
+                                    <p id="footPhone">tel <b>092 184 27 67</b></p>
+                                    <p id="footPhone">hotline <b>09 3574 3575</b></p>
+                                    <p id="footTime">từ (7h30 - 18h00) hàng ngày</p>
+
+                                    <span>follow us</span>
+                                    <div class="page">
+                                        <a href="#">
+                                            <img src="images/iconFB.PNG">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/iconVideo.PNG">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/iconYoutube.PNG">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/iconZalo.PNG">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <p>Copyright 2017 &COPY; Một sản phẩm của <a href="#">thietkewebtoanthang.com</a></p>
+                    </div>
+                </div>
+            </footer>
+            <!--<> end footer <>-->
+
+            <!--<> scrollTop <>-->
+            <script src="js/scrollPress.min.js"></script>
+            <!--<> end scrollTop <>-->
+            <script>
+                $(document).ready(function () {
+                    $(".owl-prev").addClass("fa-angle-left");
+                    $(".owl-prev").addClass("fa");
+                    $(".owl-next").addClass("fa-angle-right");
+                    $(".owl-next").addClass("fa");
+                });
+            </script>
+    </body>
+</html>

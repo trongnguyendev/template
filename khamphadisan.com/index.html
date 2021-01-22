@@ -1,0 +1,1464 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
+        <style>
+            .owl-carousel .owl-nav {
+                display: none;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $(".iconRespon").click(function () {
+                    $("header .headerMenu #menu").slideToggle();
+                });
+                $(".down2").click(function () {
+                    $("#menu2").slideToggle();
+                });
+            });
+        </script>
+        <style>
+            .owl-carousel3 .owl-nav.disabled+.owl-dots {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="headSlogun">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span id="spanLeft">
+                                Chào mừng bạn đến với Khám phá di sản, hãy xem chúng tôi có thể giúp gì cho bạn !
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="spanRight">
+                                <span id="hotline"><strong>Hotline:</strong> 0917.20.02.03 - 0888.309.909</span>
+                                <a href="#"><span id="fb-icon" class="fa fa-facebook"></span></a>
+                                <a href="#"><span id="gg-icon" class="fa fa-google"></span></a>
+                                <a href="#"><span id="tw-icon" class="fa fa-twitter"></span></a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="headerLogo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="headerMenu">
+
+                <div class="container">
+                    <div class="iconRespon">
+                        <span>MENU</span>
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="index.html" class="activeA">TRANG CHỦ</a></li>
+                        <li><a href="pageExp.html">KINH NGHIỆM DU LỊCH</a></li>
+                        <li>
+                            <a href="pageViet.html">KHÁM PHÁ VIỆT NAM</a>
+                            <ul id="menu2">
+                                <li><a href="pagePoint.html">ĐIỂM ĐẾN HẤP DẪN</a></li>
+                                <li><a href="pageFestival.html">LỄ HỘI VIỆT NAM</a></li>
+                                <li><a href="pageFoodViet.html">ẨM THỰC VIỆT</a></li>
+                            </ul>
+                            <i class="fa fa-caret-down down2"></i>
+                        </li>
+                        <li>
+                            <a href="pageDiscover.html">DI SẢN</a>
+                            <ul id="menu2">
+                                <li><a href="pageDisantulieu.html">DI SẢN TƯ LIỆU</a></li>
+                                <li><a href="pageDisanvatthe.html">DI SẢN VẬT THẾ</a></li>
+                                <li><a href="pageDisanphivatthe.html">DI SẢN PHI VẬT THỂ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pageTours.html">TOUR</a></li>
+                        <li><a href="pageHotel.html">KHÁCH SẠN</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="banner">
+                <div class="large-12 columns">
+                    <div class="owl-carousel owl-carousel3 owl-theme">
+                        <div class="item">
+                            <img src="images/banner.jpg" style="width: 100%;">
+                        </div>
+                        <div class="item">
+                            <img src="images/bannerslide1.jpg" style="width: 100%;">
+                        </div>
+                        <div class="item">
+                            <img src="images/banner.jpg" style="width: 100%;">
+                        </div>
+                        <div class="item">
+                            <img src="images/bannerslide1.jpg" style="width: 100%;">
+                        </div>
+                        </h4>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        var owl = $('.owl-carousel3');
+                        owl.owlCarousel({
+                            items: 1,
+                            loop: true,
+                            margin: 10,
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            autoplayHoverPause: true
+                        });
+
+                    })
+                </script>
+
+
+                <div class="container">
+                    <div class="bannerSearch">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Từ khóa tìm kiếm" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <select name="dia-diem-du-lich" id="input" class="form-control">
+                                    <option value="">Chọn địa điểm</option>
+                                    <option value="du-lich-ha-noi"> Du lịch Hà Nội</option>
+                                    <option value="du-lich-da-nang"> Du lịch Đà Nẵng</option>
+                                    <option value="du-lich-hue"> Du Lịch Huế</option>
+                                    <option value="du-lich-hoi-an"> Du Lịch Hội An</option>
+                                    <option value="du-lich-sapa"> Du Lịch Sapa</option>
+                                    <option value="du-lich-ha-long"> Du Lịch Hạ Long</option>
+                                    <option value="du-lich-cua-lo"> Du Lịch Cửa Lò</option>
+                                    <option value="du-lich-thanh-hoa"> Du Lịch Thanh Hóa</option>
+                                    <option value="du-lich-quang-binh"> Du Lịch Quảng Bình</option>
+                                    <option value="du-lich-phong-nha"> Du Lịch Phong Nha</option>
+                                    <option value="du-lich-moc-chau"> Du Lịch Mộc Châu</option>
+                                    <option value="du-lich-ha-giang"> Du Lịch Hà Giang</option>
+                                    <option value="du-lich-dien-bien"> Du Lịch Điện Biên</option>
+                                    <option value="du-lich-quang-tri"> Du Lịch Quảng Trị</option>
+                                    <option value="du-lich-yen-bai"> Du Lịch Yên Bái</option>
+                                    <option value="du-lich-thai-nguyen"> Du Lịch Thái Nguyên</option>
+                                    <option value="du-lich-nam-dinh"> Du Lịch Nam Định</option>
+                                    <option value="du-lich-hoa-binh"> Du Lịch Hòa Bình</option>
+                                    <option value="du-lich-thai-binh"> Du Lịch Thái Bình</option>
+                                    <option value="du-lich-quang-ngai"> Du Lịch Quảng Ngãi</option>
+                                    <option value="du-lich-phu-yen"> Du Lịch Phú Yên</option>
+                                    <option value="du-lich-quy-nhon"> Du Lịch Quy Nhơn</option>
+                                    <option value="du-lich-binh-dinh"> Du Lịch Bình Định</option>
+                                    <option value="du-lich-khanh-hoa"> Du Lịch Khánh Hòa</option>
+                                    <option value="du-lich-nha-trang"> Du Lịch Nha Trang</option>
+                                    <option value="du-lich-ninh-thuan"> Du Lịch Ninh Thuận</option>
+                                    <option value="du-lich-binh-thuan"> Du Lịch Bình Thuận</option>
+                                    <option value="du-lich-tay-ninh"> Du Lịch Tây Ninh</option>
+                                    <option value="du-lich-ha-tien"> Du Lịch Hà Tiên</option>
+                                    <option value="du-lich-bac-lieu"> Du Lịch Bạc Liêu</option>
+                                    <option value="du-lich-can-tho"> Du Lịch Cần Thơ</option>
+                                    <option value="du-lich-vung-tau"> Du Lịch Vũng Tàu</option>
+                                    <option value="du-lich-bac-kan"> Du Lịch Bắc Kạn</option>
+                                    <option value="du-lich-bac-ninh"> Du Lịch Bắc Ninh</option>
+                                    <option value="du-lich-ben-tre"> Du Lịch Bến Tre</option>
+                                    <option value="du-lich-binh-phuoc"> Du Lịch Bình Phước</option>
+                                    <option value="du-lich-ca-mau"> Du Lịch Cà Mau</option>
+                                    <option value="du-lich-cao-bang"> Du Lịch Cao Bằng</option>
+                                    <option value="du-lich-dak-nong"> Du Lịch Đắk Nông</option>
+                                    <option value="du-lich-dong-nai"> Du Lịch Đồng Nai</option>
+                                    <option value="du-lich-dong-thap"> Du Lịch Đồng Tháp</option>
+                                    <option value="du-lich-gia-lai"> Du Lịch Gia Lai</option>
+                                    <option value="du-lich-ha-nam"> Du Lịch Hà Nam</option>
+                                    <option value="du-lich-lang-son"> Du Lịch Lạng Sơn</option>
+                                    <option value="du-lich-long-an"> Du Lịch Long An</option>
+                                    <option value="du-lich-ninh-binh"> Du Lịch Ninh Bình</option>
+                                    <option value="du-lich-phu-tho"> Du Lịch Phú Thọ</option>
+                                    <option value="du-lich-quang-nam"> Du Lịch Quảng Nam</option>
+                                    <option value="du-lich-soc-trang"> Du Lịch Sóc Trăng</option>
+                                    <option value="du-lich-son-la"> Du Lịch Sơn La</option>
+                                    <option value="du-lich-tien-giang"> Du Lịch Tiền Giang</option>
+                                    <option value="du-lich-tra-vinh"> Du Lịch Trà Vinh</option>
+                                    <option value="du-lich-tuyen-quang"> Du Lịch Tuyên Quang</option>
+                                    <option value="du-lich-vinh-long"> Du Lịch Vĩnh Long</option>
+                                    <option value="du-lich-vinh-phuc"> Du Lịch Vĩnh Phúc</option>
+                                    <option value="du-lich-hai-phong"> Du Lịch Hải Phòng</option>
+                                    <option value="du-lich-tp-ho-chi-minh"> Du Lịch Tp.Hồ Chí Minh</option>
+                                    <option value="du-lich-ba-na"> Du Lịch Bà Nà</option>
+                                    <option value="du-lich-con-dao"> Du Lịch Côn Đảo</option>
+                                    <option value="du-lich-trang-an"> Du Lịch Tràng An</option>
+                                    <option value="du-lich-quang-ninh"> Du Lịch Quảng Ninh</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select name="dia-diem-du-lich" id="input" class="form-control">
+                                    <option value="">Chọn địa điểm</option>
+                                    <option value="du-lich-ha-noi"> Du lịch Hà Nội</option>
+                                    <option value="du-lich-da-nang"> Du lịch Đà Nẵng</option>
+                                    <option value="du-lich-hue"> Du Lịch Huế</option>
+                                    <option value="du-lich-hoi-an"> Du Lịch Hội An</option>
+                                    <option value="du-lich-sapa"> Du Lịch Sapa</option>
+                                    <option value="du-lich-ha-long"> Du Lịch Hạ Long</option>
+                                    <option value="du-lich-cua-lo"> Du Lịch Cửa Lò</option>
+                                    <option value="du-lich-thanh-hoa"> Du Lịch Thanh Hóa</option>
+                                    <option value="du-lich-quang-binh"> Du Lịch Quảng Bình</option>
+                                    <option value="du-lich-phong-nha"> Du Lịch Phong Nha</option>
+                                    <option value="du-lich-moc-chau"> Du Lịch Mộc Châu</option>
+                                    <option value="du-lich-ha-giang"> Du Lịch Hà Giang</option>
+                                    <option value="du-lich-dien-bien"> Du Lịch Điện Biên</option>
+                                    <option value="du-lich-quang-tri"> Du Lịch Quảng Trị</option>
+                                    <option value="du-lich-yen-bai"> Du Lịch Yên Bái</option>
+                                    <option value="du-lich-thai-nguyen"> Du Lịch Thái Nguyên</option>
+                                    <option value="du-lich-nam-dinh"> Du Lịch Nam Định</option>
+                                    <option value="du-lich-hoa-binh"> Du Lịch Hòa Bình</option>
+                                    <option value="du-lich-thai-binh"> Du Lịch Thái Bình</option>
+                                    <option value="du-lich-quang-ngai"> Du Lịch Quảng Ngãi</option>
+                                    <option value="du-lich-phu-yen"> Du Lịch Phú Yên</option>
+                                    <option value="du-lich-quy-nhon"> Du Lịch Quy Nhơn</option>
+                                    <option value="du-lich-binh-dinh"> Du Lịch Bình Định</option>
+                                    <option value="du-lich-khanh-hoa"> Du Lịch Khánh Hòa</option>
+                                    <option value="du-lich-nha-trang"> Du Lịch Nha Trang</option>
+                                    <option value="du-lich-ninh-thuan"> Du Lịch Ninh Thuận</option>
+                                    <option value="du-lich-binh-thuan"> Du Lịch Bình Thuận</option>
+                                    <option value="du-lich-tay-ninh"> Du Lịch Tây Ninh</option>
+                                    <option value="du-lich-ha-tien"> Du Lịch Hà Tiên</option>
+                                    <option value="du-lich-bac-lieu"> Du Lịch Bạc Liêu</option>
+                                    <option value="du-lich-can-tho"> Du Lịch Cần Thơ</option>
+                                    <option value="du-lich-vung-tau"> Du Lịch Vũng Tàu</option>
+                                    <option value="du-lich-bac-kan"> Du Lịch Bắc Kạn</option>
+                                    <option value="du-lich-bac-ninh"> Du Lịch Bắc Ninh</option>
+                                    <option value="du-lich-ben-tre"> Du Lịch Bến Tre</option>
+                                    <option value="du-lich-binh-phuoc"> Du Lịch Bình Phước</option>
+                                    <option value="du-lich-ca-mau"> Du Lịch Cà Mau</option>
+                                    <option value="du-lich-cao-bang"> Du Lịch Cao Bằng</option>
+                                    <option value="du-lich-dak-nong"> Du Lịch Đắk Nông</option>
+                                    <option value="du-lich-dong-nai"> Du Lịch Đồng Nai</option>
+                                    <option value="du-lich-dong-thap"> Du Lịch Đồng Tháp</option>
+                                    <option value="du-lich-gia-lai"> Du Lịch Gia Lai</option>
+                                    <option value="du-lich-ha-nam"> Du Lịch Hà Nam</option>
+                                    <option value="du-lich-lang-son"> Du Lịch Lạng Sơn</option>
+                                    <option value="du-lich-long-an"> Du Lịch Long An</option>
+                                    <option value="du-lich-ninh-binh"> Du Lịch Ninh Bình</option>
+                                    <option value="du-lich-phu-tho"> Du Lịch Phú Thọ</option>
+                                    <option value="du-lich-quang-nam"> Du Lịch Quảng Nam</option>
+                                    <option value="du-lich-soc-trang"> Du Lịch Sóc Trăng</option>
+                                    <option value="du-lich-son-la"> Du Lịch Sơn La</option>
+                                    <option value="du-lich-tien-giang"> Du Lịch Tiền Giang</option>
+                                    <option value="du-lich-tra-vinh"> Du Lịch Trà Vinh</option>
+                                    <option value="du-lich-tuyen-quang"> Du Lịch Tuyên Quang</option>
+                                    <option value="du-lich-vinh-long"> Du Lịch Vĩnh Long</option>
+                                    <option value="du-lich-vinh-phuc"> Du Lịch Vĩnh Phúc</option>
+                                    <option value="du-lich-hai-phong"> Du Lịch Hải Phòng</option>
+                                    <option value="du-lich-tp-ho-chi-minh"> Du Lịch Tp.Hồ Chí Minh</option>
+                                    <option value="du-lich-ba-na"> Du Lịch Bà Nà</option>
+                                    <option value="du-lich-con-dao"> Du Lịch Côn Đảo</option>
+                                    <option value="du-lich-trang-an"> Du Lịch Tràng An</option>
+                                    <option value="du-lich-quang-ninh"> Du Lịch Quảng Ninh</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="submit" value="TÌM KIẾM NGAY">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="bannerImgSpeed">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <a href="pagenewsDetail.html"><img src="images/slideimg.jpg" alt="Los Angeles" style="width:100%;"></a>
+                                        <div class="carousel-caption">
+
+                                            <p>
+                                                <a href="pagenewsDetail.html">
+                                                    [Ninh Bình] những địa điểm nhất định phải ghé thăm khi đến Ninh Bình
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="pagenewsDetail.html"><img src="images/slideimg3.jpg" alt="Chicago" style="width:100%;"></a>
+                                        <div class="carousel-caption">
+                                            <p>
+                                                <a href="pagenewsDetail.html">
+                                                    [Ninh Bình] những địa điểm nhất định phải ghé thăm khi đến Ninh Bình
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="pagenewsDetail.html"><img src="images/slideimg2.jpg" alt="New York" style="width:100%;"></a>
+                                        <div class="carousel-caption">
+                                            <p>
+                                                <a href="pagenewsDetail.html">
+                                                    [Ninh Bình] những địa điểm nhất định phải ghé thăm khi đến Ninh Bình
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="newsSmall">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="smallItem">
+                                            <a href="pagenewsDetail.html">
+                                                <img src="images/small1.jpg">
+                                            </a>
+                                            <a href="pagenewsDetail.html" id="title">
+                                                [QUẢNG NAM] NÉT ĐỘC ĐÁO CỦA THÁP CHIÊN ĐÀN
+                                            </a>
+                                            <span>10 - 07 - 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="smallItem">
+                                            <a href="pagenewsDetail.html">
+                                                <img src="images/small2.jpg">
+                                            </a>
+                                            <a href="pagenewsDetail.html" id="title">
+                                                [Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè
+                                            </a>
+                                            <span>10 - 07 - 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="smallItem">
+                                            <a href="pagenewsDetail.html">
+                                                <img src="images/small3.jpg">
+                                            </a>
+                                            <a href="pagenewsDetail.html" id="title">
+                                                Hãy đến Phú Yên để thấy được Việt Nam đẹp như thế nào
+                                            </a>
+                                            <span>10 - 07 - 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="viewmore">
+                                    <a href="pageNewsList.html"><input type="button" value="Xem thêm"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="speedNews">
+                                <h1><a href="pageNewsList.html" style="text-decoration: none;">TIN NHANH DU LỊCH</a></h1>
+
+                                <div class="speedCont">
+                                    <p>
+                                        <a href="pagenewsDetail.html">[Sơn La] đến Mộc Châu khám phá thác Chiềng Khoa – vẽ đẹp chốn thâm sơn cùng cốc</a>
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">[Ninh Bình] những địa điểm nhất định phải ghé thăm khi đến Ninh Bình</a>
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">[Bắc Giang] gỏi cá chép Nội Hoàng – đặc sản một vùng quê</a>
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>   
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">Hãy đến Phú Yên để thấy được Việt Nam đẹp như thế nào</a>
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">Đến Tây Ninh thưởng thức đặc sản bánh tráng bơ</a>
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                    </p>
+                                    <p>
+                                        <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                    </p>                                    
+                                </div>
+                            </div>
+                            <div class="More">
+                                <div class="itemMore">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <p id="icon"><i class="fa fa-camera-retro"></i></p>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9">
+                                            <div class="itemmoreCont">
+                                                <a href="pageExp.html">Kinh nghiệm du lịch</a>
+                                                <p>Chia sẻ kinh nghiệm 4 phương</p>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemMore">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <p id="icon"><i class="fa fa-ticket"></i></p>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9">
+                                            <div class="itemmoreCont">
+                                                <a href="pageSale.html">Chương trình khuyến mãi</a>
+                                                <p>Các chương trình khuyến mãi hấp dẫn</p>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemMore">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-3">
+                                            <p id="icon"><i class="fa fa-cutlery"></i></p>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9">
+                                            <div class="itemmoreCont">
+                                                <a href="pageFoodViet.html">Khám phá ẩm thực</a>
+                                                <p>Ẩm thực đặc sắc 4 phương</p>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interestingPoint">
+                <div class="container">
+                    <div class="Point">
+                        <p><a href="pagePoint.html">ĐIỂM ĐẾN HẤP DẪN</a></p>
+                        <div class="large-12 columns">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small1.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small2.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small3.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small5.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small4.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small2.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small3.jpg">
+                                    </a>
+                                    <a href="#" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="pagenewsDetail.html">
+                                        <img src="images/small5.jpg">
+                                    </a>
+                                    <a href="pagenewsDetail.html" id="title2">
+                                        <p>[Bắc Kạn] Hồ Ba Bể điểm đến tuyệt vời cho những ngày hè</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <script>
+                                $(document).ready(function () {
+                                    var owl = $('.owl-carousel');
+                                    owl.owlCarousel({
+                                        items: 5,
+                                        loop: true,
+                                        margin: 10,
+                                        responsiveClass: true,
+                                        responsive: {
+                                            0: {
+                                                items: 1,
+                                                nav: true
+                                            },
+                                            600: {
+                                                items: 3,
+                                                nav: false
+                                            },
+                                            1000: {
+                                                items: 5,
+                                                nav: true,
+                                                loop: false
+                                            }
+                                        },
+                                        autoplay: true,
+                                        autoplayTimeout: 2000,
+                                        autoplayHoverPause: true
+
+                                    });
+                                })
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="ExpercizeSale">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="exp">
+                                <h4>
+                                    <a href="pageExp.html">KINH NGHIỆM DU LỊCH</a>
+
+                                </h4>
+                                <div class="expCont">
+                                    <div class="expItemTop">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small2.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-xs-7">
+                                                <div class="expItemCont">
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                    <span>11 - 07 - 2017</span>
+                                                    <p>
+                                                        Khamphadisan.com – Bắc Sơn là một thị trấn nhỏ thuộc tỉnh Lạng Sơn, cách thủ đô Hà Nội khoảng 160km, tọa lạc giữa một thung lũng có cảnh đẹp...
+                                                    </p>
+                                                    <a href="pagenewsDetail.html" id="xt">Chi tiết..</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="expItem">
+                                        <div class="row">
+                                            <div class="col-md-3 col-xs-3">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small2.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-xs-9">
+                                                <div class="expItemCont">
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                    <span>11 - 07 - 2017</span>
+                                                    <p>
+                                                        Khamphadisan.com – Bắc Sơn là một thị trấn nhỏ thuộc tỉnh Lạng Sơn, cách thủ đô Hà Nội khoảng 160km, tọa lạc giữa một thung lũng có cảnh đẹp...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="expItem">
+                                        <div class="row">
+                                            <div class="col-md-3 col-xs-3">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-xs-9">
+                                                <div class="expItemCont">
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                    <span>11 - 07 - 2017</span>
+                                                    <p>
+                                                        Khamphadisan.com – Bắc Sơn là một thị trấn nhỏ thuộc tỉnh Lạng Sơn, cách thủ đô Hà Nội khoảng 160km, tọa lạc giữa một thung lũng có cảnh đẹp...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="expItem">
+                                        <div class="row">
+                                            <div class="col-md-3 col-xs-3">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small3.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-xs-9">
+                                                <div class="expItemCont">
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                    <span>11 - 07 - 2017</span>
+                                                    <p>
+                                                        Khamphadisan.com – Bắc Sơn là một thị trấn nhỏ thuộc tỉnh Lạng Sơn, cách thủ đô Hà Nội khoảng 160km, tọa lạc giữa một thung lũng có cảnh đẹp...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="expItem">
+                                        <div class="row">
+                                            <div class="col-md-3 col-xs-3">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small4.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 col-xs-9">
+                                                <div class="expItemCont">
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                    <span>11 - 07 - 2017</span>
+                                                    <p>
+                                                        Khamphadisan.com – Bắc Sơn là một thị trấn nhỏ thuộc tỉnh Lạng Sơn, cách thủ đô Hà Nội khoảng 160km, tọa lạc giữa một thung lũng có cảnh đẹp...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="exp">
+                                <h4>
+                                    <a href="pageSale.html">CHƯƠNG TRÌNH KHUYẾN MÃI</a>
+
+                                </h4>
+                                <div class="expCont">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="expItemTop">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small2.jpg" id="imgBig">
+                                                </a>
+                                                <div class="expItemCont">
+                                                    <span>11 - 07 - 2017</span>
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small6.jpg" id="imgBig">
+                                                </a>
+                                                <div class="expItemCont">
+                                                    <span>11 - 07 - 2017</span>
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small7.jpg" id="imgBig">
+                                                </a>
+                                                <div class="expItemCont">
+                                                    <span>11 - 07 - 2017</span>
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small8.jpg" id="imgBig">
+                                                </a>
+                                                <div class="expItemCont">
+                                                    <span>11 - 07 - 2017</span>
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small8.jpg" id="imgBig">
+                                                </a>
+                                                <div class="expItemCont">
+                                                    <span>11 - 07 - 2017</span>
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <a href="pagenewsDetail.html" id="imgexp">
+                                                    <img src="images/small9.jpg" id="imgBig">
+                                                </a>
+                                                <div class="expItemCont">
+                                                    <span>11 - 07 - 2017</span>
+                                                    <a href="pagenewsDetail.html">[Lạng Sơn] kinh nghiệm phượt Bắc Sơn mùa lúa chín</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Infomedia">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="InfoEvent">
+                                <h4>
+                                    THÔNG TIN VÀ SỰ KIỆN
+                                </h4>
+                                <div class="infoeventCont">
+                                    <p>SỰ KIỆN SẮP DIỄN RA</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="infoLeft">
+                                                <a href="pagenewsDetail.html">Lên Mộc Châu tham gia lễ hội hái mận <img src="images/hot.gif"></a>
+                                                <a href="pagenewsDetail.html">[Nghệ An] Lễ Bốc Mó nét văn hóa đặc trưng của dân tộc Thổ<img src="images/hot.gif"></a>
+                                                <a href="pagenewsDetail.html">[Huế] Festival Huế 2018 tiếp tục được tổ chức với quy mô quốc tế<img src="images/hot.gif"></a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="infoRight">
+                                                <a href="pagenewsDetail.html">[Đà Nẵng] Lễ hội rượu vang Bà Nà Hills – The Taste of Ba Na Hills 2017 <img src="images/hot.gif"></a>
+                                                <a href="pagenewsDetail.html">Hội An sẽ tổ chức Festival tơ lụa vào tháng 6 <img src="images/hot.gif"></a>
+                                                <a href="pagenewsDetail.html">[HOT] giới trẻ 3 miền xõa thỏa sức với chuỗi sự kiện lớn trong tháng 5 <img src="images/hot.gif"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="culinary">
+                                <h4><a href="pageFoodViet.html" style="text-decoration: none;">ẨM THỰC</a></h4>
+                                <div class="culinaryCont">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="culinaryItem">
+                                                <a href="#">
+                                                    <img src="images/amthuc.jpg">
+                                                    <span>ĐẾN TÂY NINH THƯỞNG THỨC ĐẶC SẢN BÁNH TRÁNG BƠ</span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="culinaryItem">
+                                                <a href="#">
+                                                    <img src="images/amthuc3.jpg">
+                                                    <span>ĐẾN TÂY NINH THƯỞNG THỨC ĐẶC SẢN BÁNH TRÁNG BƠ</span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="culinaryItem">
+                                                <a href="#">
+                                                    <img src="images/amthuc2.jpg">
+                                                    <span>ĐẾN TÂY NINH THƯỞNG THỨC ĐẶC SẢN BÁNH TRÁNG BƠ</span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="exp">
+                                <h4>
+                                    <a href="pageThuongHieu.html">THƯƠNG HIỆU UY TÍN</a>
+                                </h4>
+                                <div class="expCont">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-4">
+                                                        <a href="pagenewsDetail.html" id="imgexp">
+                                                            <img src="images/small2.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-8 col-xs-8">
+                                                        <div class="expItemCont">
+                                                            <a href="pagenewsDetail.html" style="font-weight: normal;">[Huế] Nhà hàng Cồn Tộc, “nơi ăn ngon – sống ảo đẹp” khi về Phá Tam Giang</a>
+                                                            <span>11 - 07 - 2017</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-4">
+                                                        <a href="pagenewsDetail.html" id="imgexp">
+                                                            <img src="images/small5.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-8 col-xs-8">
+                                                        <div class="expItemCont">
+                                                            <a href="pagenewsDetail.html" style="font-weight: normal;">[Huế] Nhà hàng Cồn Tộc, “nơi ăn ngon – sống ảo đẹp” khi về Phá Tam Giang</a>
+                                                            <span>11 - 07 - 2017</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-4">
+                                                        <a href="pagenewsDetail.html" id="imgexp">
+                                                            <img src="images/small6.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-8 col-xs-8">
+                                                        <div class="expItemCont">
+                                                            <a href="pagenewsDetail.html" style="font-weight: normal;">[Huế] Nhà hàng Cồn Tộc, “nơi ăn ngon – sống ảo đẹp” khi về Phá Tam Giang</a>
+                                                            <span>11 - 07 - 2017</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-4">
+                                                        <a href="pagenewsDetail.html" id="imgexp">
+                                                            <img src="images/small5.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-8 col-xs-8">
+                                                        <div class="expItemCont">
+                                                            <a href="pagenewsDetail.html" style="font-weight: normal;">[Huế] Nhà hàng Cồn Tộc, “nơi ăn ngon – sống ảo đẹp” khi về Phá Tam Giang</a>
+                                                            <span>11 - 07 - 2017</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-4">
+                                                        <a href="pagenewsDetail.html" id="imgexp">
+                                                            <img src="images/small4.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-8 col-xs-8">
+                                                        <div class="expItemCont">
+                                                            <a href="pagenewsDetail.html" style="font-weight: normal;">[Huế] Nhà hàng Cồn Tộc, “nơi ăn ngon – sống ảo đẹp” khi về Phá Tam Giang</a>
+                                                            <span>11 - 07 - 2017</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="expItem">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-4">
+                                                        <a href="pagenewsDetail.html" id="imgexp">
+                                                            <img src="images/small3.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-8 col-xs-8">
+                                                        <div class="expItemCont">
+                                                            <a href="pagenewsDetail.html" style="font-weight: normal;">[Huế] Nhà hàng Cồn Tộc, “nơi ăn ngon – sống ảo đẹp” khi về Phá Tam Giang</a>
+                                                            <span>11 - 07 - 2017</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>                                   
+                                </div>
+                            </div>
+
+                            <!--..............-->
+
+                            <div class="large-12 columns" style="margin: 20px 0;">
+                                <div class="owl-carousel1 owl-carousel owl-theme">
+                                    <div class="item" style="padding: 10px;">
+                                        <a href="#">
+                                            <img src="images/logopartner.gif" style="border: 1px solid #ccc;">
+                                        </a> 
+                                    </div>
+                                    <div class="item" style="padding: 10px;">
+                                        <a href="#">
+                                            <img src="images/logopartner1.gif" style="border: 1px solid #ccc;">
+                                        </a> 
+                                    </div>
+                                    <div class="item" style="padding: 10px;">
+                                        <a href="#">
+                                            <img src="images/logopartner2.gif" style="border: 1px solid #ccc;">
+                                        </a> 
+                                    </div>
+                                    <div class="item" style="padding: 10px;">
+                                        <a href="#">
+                                            <img src="images/logopartner3.gif" style="border: 1px solid #ccc;">
+                                        </a> 
+                                    </div>
+                                    <div class="item" style="padding: 10px;">
+                                        <a href="#">
+                                            <img src="images/logopartner1.gif" style="border: 1px solid #ccc;">
+                                        </a> 
+                                    </div>
+                                    <div class="item" style="padding: 10px;">
+                                        <a href="#">
+                                            <img src="images/logopartner.gif" style="border: 1px solid #ccc;">
+                                        </a> 
+                                    </div>
+                                </div>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        var owl = $('.owl-carousel1');
+                                        owl.owlCarousel({
+
+                                            loop: true,
+                                            margin: 10,
+                                            responsiveClass: true,
+                                            responsive: {
+                                                0: {
+                                                    items: 2,
+                                                    nav: true
+                                                },
+                                                600: {
+                                                    items: 3,
+                                                    nav: false
+                                                },
+                                                1000: {
+                                                    items: 5,
+                                                    nav: true,
+                                                    loop: false
+                                                }
+                                            },
+                                            autoplay: true,
+                                            autoplayTimeout: 1000,
+                                            autoplayHoverPause: true
+
+                                        });
+                                    })
+                                </script>
+                            </div>
+                            <!--................-->
+
+                            <div class="Tours">
+                                <div class="ToursHead">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h1 id="titleTour1"><a href="pageTours.html" style="text-decoration: none;">tour du lịch</a></h1>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="listNametour">
+                                                <a href="pageTours.html">Tour hằng ngày</a> |
+                                                <a href="pageTours.html">Tour miền nam</a> |
+                                                <a href="pageTours.html">Tour miền bắc</a> |
+                                                <a href="pageTours.html">Tour trong nước</a> |
+                                                <a href="pageTours.html">Tour nước ngoài</a> |
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ToursCont">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="ToursItem">
+                                                <a href="pagetourDetail.html" id="ImgTour">
+                                                    <img src="images/tourimg.jpg">
+                                                    <span>3.600.000đ</span>
+                                                </a> 
+                                                <div class="TouritemCont">
+                                                    <a href="pagetourDetail.html" id="itemtourtitle">DU LỊCH NHA TRANG TỪ HUẾ 3 NGÀY 4 ĐÊM CỰC VUI GIÁ RẺ !</a>
+                                                    <p>Thời gian tour: 3 ngày 4 đêm</p>
+                                                    <a href="pagetourDetail.html" id="dattour">ĐẶT TOUR NGAY</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ToursItem">
+                                                <a href="pagetourDetail.html" id="ImgTour">
+                                                    <img src="images/tourimg2.jpg">
+                                                    <span>3.600.000đ</span>
+                                                </a> 
+                                                <div class="TouritemCont">
+                                                    <a href="pagetourDetail.html" id="itemtourtitle">DU LỊCH NHA TRANG TỪ HUẾ 3 NGÀY 4 ĐÊM CỰC VUI GIÁ RẺ !</a>
+                                                    <p>Thời gian tour: 3 ngày 4 đêm</p>
+                                                    <a href="pagetourDetail.html" id="dattour">ĐẶT TOUR NGAY</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ToursItem">
+                                                <a href="pagetourDetail.html" id="ImgTour">
+                                                    <img src="images/tourimg4.jpg">
+                                                    <span>3.600.000đ</span>
+                                                </a> 
+                                                <div class="TouritemCont">
+                                                    <a href="pagetourDetail.html" id="itemtourtitle">DU LỊCH NHA TRANG TỪ HUẾ 3 NGÀY 4 ĐÊM CỰC VUI GIÁ RẺ !</a>
+                                                    <p>Thời gian tour: 3 ngày 4 đêm</p>
+                                                    <a href="pagetourDetail.html" id="dattour">ĐẶT TOUR NGAY</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ToursItem">
+                                                <a href="pagetourDetail.html" id="ImgTour">
+                                                    <img src="images/tourimg3.jpg">
+                                                    <span>3.600.000đ</span>
+                                                </a> 
+                                                <div class="TouritemCont">
+                                                    <a href="pagetourDetail.html" id="itemtourtitle">DU LỊCH NHA TRANG TỪ HUẾ 3 NGÀY 4 ĐÊM CỰC VUI GIÁ RẺ !</a>
+                                                    <p>Thời gian tour: 3 ngày 4 đêm</p>
+                                                    <a href="pagetourDetail.html" id="dattour">ĐẶT TOUR NGAY</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ToursItem">
+                                                <a href="pagetourDetail.html" id="ImgTour">
+                                                    <img src="images/tourimg4.jpg">
+                                                    <span>3.600.000đ</span>
+                                                </a> 
+                                                <div class="TouritemCont">
+                                                    <a href="pagetourDetail.html" id="itemtourtitle">DU LỊCH NHA TRANG TỪ HUẾ 3 NGÀY 4 ĐÊM CỰC VUI GIÁ RẺ !</a>
+                                                    <p>Thời gian tour: 3 ngày 4 đêm</p>
+                                                    <a href="pagetourDetail.html" id="dattour">ĐẶT TOUR NGAY</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ToursItem">
+                                                <a href="pagetourDetail.html" id="ImgTour">
+                                                    <img src="images/tourimg2.jpg">
+                                                    <span>3.600.000đ</span>
+                                                </a> 
+                                                <div class="TouritemCont">
+                                                    <a href="pagetourDetail.html" id="itemtourtitle">DU LỊCH NHA TRANG TỪ HUẾ 3 NGÀY 4 ĐÊM CỰC VUI GIÁ RẺ !</a>
+                                                    <p>Thời gian tour: 3 ngày 4 đêm</p>
+                                                    <a href="pagetourDetail.html" id="dattour">ĐẶT TOUR NGAY</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="supportTravel">
+                                <h5>TƯ VẤN DU LỊCH</h5>
+                                <p id="name">MR.THIỆN</p>
+                                <p>
+                                    <i class="fa fa-phone"></i>
+                                    0917 20 02 03
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope"></i>
+                                    khamphadisan@gmail.com
+                                </p>
+                                <p>
+                                    <i class="fa fa-skype"></i>
+                                    khamphadisan
+                                </p>
+
+                                <p id="name">MS.YẾN</p>
+                                <p>
+                                    <i class="fa fa-phone"></i>
+                                    0917 20 02 03
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope"></i>
+                                    khamphadisan@gmail.com
+                                </p>
+                                <p>
+                                    <i class="fa fa-skype"></i>
+                                    khamphadisan
+                                </p>
+                            </div>
+
+                            <div class="restaurant">
+                                <h1>NHÀ HÀNG</h1>
+                                <div class="resCont">
+                                    <div class="rescontItem">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5">
+                                                <a href="pageRestaurant.html" id="imgRes">
+                                                    <img src="images/res1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-xs-7" style="padding-left: 0;">
+                                                <a href="pageRestaurant.html" id="restitle">
+                                                    Nhà Hàng Huế Cổ – Huế.<br>
+                                                    <span>Huế</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="rescontItem">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5">
+                                                <a href="pageRestaurant.html" id="imgRes">
+                                                    <img src="images/res2.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-xs-7" style="padding-left: 0;">
+                                                <a href="pageRestaurant.html" id="restitle">
+                                                    Nhà Hàng Huế Cổ – Huế.<br>
+                                                    <span>Huế</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="rescontItem">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5">
+                                                <a href="pageRestaurant.html" id="imgRes">
+                                                    <img src="images/res3.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-xs-7" style="padding-left: 0;">
+                                                <a href="pageRestaurant.html" id="restitle">
+                                                    Nhà Hàng Huế Cổ – Huế.<br>
+                                                    <span>Huế</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="rescontItem">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5">
+                                                <a href="pageRestaurant.html" id="imgRes">
+                                                    <img src="images/res4.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-xs-7" style="padding-left: 0;">
+                                                <a href="pageRestaurant.html" id="restitle">
+                                                    Nhà Hàng Huế Cổ – Huế.<br>
+                                                    <span>Huế</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="rescontItem">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5">
+                                                <a href="pageRestaurant.html" id="imgRes">
+                                                    <img src="images/res5.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-xs-7" style="padding-left: 0;">
+                                                <a href="pageRestaurant.html" id="restitle">
+                                                    Nhà Hàng Huế Cổ – Huế.<br>
+                                                    <span>Huế</span>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videoNew">
+                                <h2>Video mới</h2>
+                                <div class="videoCont">
+                                    <a href="pageVideo.html" style="text-decoration:none">
+                                        <div class="videoItem">
+                                            <img src="images/videoimg.jpg">
+                                            <p>Chùa động Am Tiên - Ninh Bình</p>
+                                        </div>
+                                    </a>
+                                    <div class="videoMore">
+
+                                        <div class="col-md-6" style="padding: 0;">
+                                            <a href="pageVideo.html" style="text-decoration:none">
+                                                <div class="videoItem">
+                                                    <img src="images/videoimg.jpg">
+                                                    <p>Chùa động Am Tiên - Ninh Bình</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6" style="padding: 0;">
+                                            <a href="pageVideo.html" style="text-decoration:none">
+                                                <div class="videoItem">
+                                                    <img src="images/videoimg.jpg">
+                                                    <p>Chùa động Am Tiên - Ninh Bình</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="readMore">
+                                <h1>đọc nhiều nhất</h1>
+                                <div class="readCont">
+                                    <div class="itemread">
+                                        <span>1</span>
+                                        <a href="pagenewsDetail.html">[Huế] Những địa điểm chụp ảnh “đẹp như mơ” dịp lễ 26/3</a>
+                                    </div>
+                                    <div class="itemread">
+                                        <span>2</span>
+                                        <a href="pagenewsDetail.html">[Huế] Những địa điểm chụp ảnh “đẹp như mơ” dịp lễ 26/3</a>
+                                    </div>
+                                    <div class="itemread">
+                                        <span>3</span>
+                                        <a href="pagenewsDetail.html">[Huế] Những địa điểm chụp ảnh “đẹp như mơ” dịp lễ 26/3</a>
+                                    </div>
+                                    <div class="itemread">
+                                        <span>4</span>
+                                        <a href="pagenewsDetail.html">[Huế] Những địa điểm chụp ảnh “đẹp như mơ” dịp lễ 26/3</a>
+                                    </div>
+                                    <div class="itemread">
+                                        <span>5</span>
+                                        <a href="pagenewsDetail.html">[Huế] Những địa điểm chụp ảnh “đẹp như mơ” dịp lễ 26/3</a>
+                                    </div>
+                                    <div class="itemread">
+                                        <span>6</span>
+                                        <a href="pagenewsDetail.html">[Huế] Những địa điểm chụp ảnh “đẹp như mơ” dịp lễ 26/3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <a href="#" id="home">Trang Chủ</a>
+                <div class="footCont">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footItem">
+                                <h1>thông tin du lịch</h1>
+                                <p><a href="#">Kinh nghiệm du lịch</a></p>
+                                <p><a href="#">Di sản Việt Nam</a> </p>
+                                <p><a href="#">Di sản Thế Giới</a> </p>
+                                <p><a href="#">Khám phá Việt Nam</a> </p>
+                                <p><a href="#">Khám phá Thế Giới</a> </p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footItem">
+                                <h1>TOUR DU LỊCH GIÁ RẺ</h1>
+                                <p><a href="#">Tour nước ngoài</a> </p>
+                                <p><a href="#">Tour miền Bắc</a> </p>
+                                <p><a href="#">Tour miền Nam</a> </p>
+                                <p><a href="#">Tour hàng ngày</a> </p>
+
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footItem">
+                                <h1>Đặt khách sạn</h1>
+                                <p><a href="#">5 sao</a> </p>
+                                <p><a href="#">4 sao</a> </p>
+                                <p><a href="#">3 sao</a> </p>
+                                <p><a href="#">2 sao</a> </p>
+                                <p> <a href="#">1 sao</a> </p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footItem">
+                                <h1>dịch vụ khác</h1>
+                                <p><a href="#">Dịch vụ tư vấn du lịch</a></p> 
+                                <p><a href="#">Dịch vụ nhà hàng</a> </p>
+                                <p><a href="#">Vé máy bay giá rẻ</a> </p>
+                                <p> <a href="#">Cẩm nang du lịch</a> </p>
+                                <p>  <a href="#">Cho thuê xe du lịch</a> </p>
+                            </div> 
+                        </div>
+                    </div>
+                    <h6>ĐỊA ĐIỂM DU LỊCH</h6>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footItem">
+
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footItem">
+
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footItem">
+
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footItem">
+
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                                <p><a href="#">Du lịch Hà Nội</a></p>
+                                <p><a href="#">Du lịch Cửa Lò</a> </p>
+                                <p><a href="#">Du lịch Hà Giang</a> </p>
+                                <p><a href="#">Du lịch Hòa Bình</a> </p>
+                                <p><a href="#">Du lịch Bạc Liệu</a> </p>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> 
+            <div class="footCont1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footItem1">
+                                <h1>GIỚI THIỆU</h1>
+                                <a href="#" id="imgFoot">
+                                    <img src="images/logo.png">
+                                </a>
+                                <p>Khám Phá Di Sản là ai ? Tại sao bạn cần Khám Phá Di Sản ? Chúng tôi giúp gì cho bạn ? (*) Đối với các đơn vị kinh doanh: Khám Phá Di Sản liên kết truyền thông.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footItem1">
+                                <h1>FACEBOOK</h1>
+                                <div id="fb-root"></div>
+                                <script>(function (d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id))
+                                                    return;
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=185380675269037";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));
+                                </script>
+                                <div class="fb-page" data-href="https://www.facebook.com/khamphadisan"  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footItem1">
+                                <h1>THÔNG TIN LIÊN HỆ - HỢP TÁC</h1>
+                                <p>Địa chỉ: 45 Hoàng Quốc Việt, P. An Đông, Tp. Huế</p>
+                                <p>Email: khamphadisan@gmail.com</p>
+                                <p>Điện thoại: 0917.20.02.03 - 0888.309.909</p>
+                                <p>Website: www.khamphadisan.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="license">
+                <p>copyright &COPY; <a href="#">TOÀN THẮNG COMPANY</a>2017</p>
+            </div>
+        </footer>
+    </body>
+</html>

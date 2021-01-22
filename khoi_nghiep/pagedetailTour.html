@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOURIST</title>
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">       
+        <script src="js/owl.carousel.js"></script>
+        <link rel="stylesheet" href="css/scrollPress.min.css">
+
+       
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src="js/mystyle.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="khoinghiep">
+            <!--<> menu responsive <>-->
+            <div class="responMenu" id="modal">
+                <nav class="sideMenu">
+                    <div class="closeMenu">
+                        <i class="fa fa-remove"></i>
+                    </div>
+                    <ul id="probRespon">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li>
+
+                            <a href="pagelistTour.html">Tour nước ngoài</a>
+                            <i class="fa fa-angle-down showprob2"></i>
+                            <ul id="prob2Respon">
+                                <li><a href="pagelistTour.html">Tour Châu Á</a></li>
+                                <li><a href="pagelistTour.html">Đông Nam Á</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Âu</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Úc</a></li>
+                            </ul>
+                        </li>
+                        <li>
+
+                            <a href="pagelistTour.html">Tour trong nước</a>
+                            <i class="fa fa-angle-down showprob2"></i>
+                            <ul id="prob2Respon">
+                                <li><a href="pagelistTour.html">Tour Châu Á</a></li>
+                                <li><a href="pagelistTour.html">Đông Nam Á</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Âu</a></li>
+                                <li><a href="pagelistTour.html">Tour Châu Úc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pageIntro.html">Giới thiệu</a></li>
+                        <li>
+
+                            <a href="pageExp.html">Cẩm nang</a>
+                            <i class="fa fa-angle-down showprob2"></i>
+                            <ul id="prob2Respon">
+                                <li><a href="pageExp.html">Tour Châu Á</a></li>
+                                <li><a href="pageExp.html">Đông Nam Á</a></li>
+                                <li><a href="pageExp.html">Tour Châu Âu</a></li>
+                                <li><a href="pageExp.html">Tour Châu Úc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pageContact.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="headerPhone1">
+                        <div class="phone">
+                            <span class="fa fa-phone-square"></span>
+                            <div class="dt">
+                                <p>ĐIỆN THOẠI</p>
+                                <strong>02583 890 514</strong>
+                            </div>
+                        </div>
+                        <div class="hotline">
+                            <span class="fa fa-volume-control-phone"></span>
+                            <div class="hl">
+                                <p>HOTLINE</p>
+                                <strong>02583 890 514</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headerSearch1">
+                        <form>
+                            <input type="text" placeholder="Nhập địa điểm bạn muốn đi...">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="fullbox" id="fullbox">
+                <div class="box">
+                    <i class="fa fa-remove" id="closebox" onclick="close();"></i>
+                    <form>
+                        <marquee>
+                            Tour du lịch Cửu Trại Câu – Mâu Ni Câu – Thành Đô 5 ngày 4 đêm
+                        </marquee>
+                        <strong>Họ và tên(*)</strong>
+                        <input type="text">
+                        <strong>Email(*)</strong>
+                        <input type="text">
+                        <strong>Số điện thoại</strong>
+                        <input type="text">
+                        <strong>Ngày đi</strong>
+                        <input type="date">
+                        <strong>Số người đi</strong>
+                        <input type="number">
+                        <p><button type="submit">ĐẶT TOUR</button></p>
+                    </form>
+                </div>
+            </div>
+            <script>
+                var btn = document.getElementById("btn");
+                var close = document.getElementById("closebox");
+                var modal = document.getElementById('fullbox');
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                };
+                close.onclick = function () {
+                    modal.style.display = "none";
+                }
+                function show() {
+                    modal.style.display = "block";
+                }
+            </script>
+            <!--<> end menu responsive <>-->
+            <header>
+                <div class="container">
+                    <div class="logoSearch">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#" class="headerLogo">
+                                    <i class="fa fa-bars icon-menu"></i>
+                                    <img src="images/logo.png">
+                                </a>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="headerSearch">
+                                    <input type="text" placeholder="Nhập địa điểm bạn muốn đi...">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="headerPhone">
+                                    <div class="phone">
+                                        <span class="fa fa-phone-square"></span>
+                                        <div class="dt">
+                                            <p>ĐIỆN THOẠI</p>
+                                            <strong>02583 890 514</strong>
+                                        </div>
+                                    </div>
+                                    <div class="hotline">
+                                        <span class="fa fa-volume-control-phone"></span>
+                                        <div class="hl">
+                                            <p>HOTLINE</p>
+                                            <strong>02583 890 514</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!--<> menu <>-->
+                <nav id="menu">
+                    <div class="container">
+                        <ul id="prob">
+                            <li><a href="index.html" class="active">Trang chủ</a></li>
+                            <li>
+                                <a href="pagelistTour.html">Tour nước ngoài<i class="fa fa-angle-down"></i></a>
+                                <ul id="probb">
+                                    <i class="fa fa-caret-up"></i>
+                                    <li><a href="pagelistTour.html">Tour Châu Á</a></li>
+                                    <li><a href="pagelistTour.html">Đông Nam Á</a></li>
+                                    <li><a href="pagelistTour.html">Tour Châu Âu</a></li>
+                                    <li><a href="pagelistTour.html">Tour Châu Úc</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="pagelistTour.html">Tour trong nước<i class="fa fa-angle-down"></i></a>
+                                <ul id="probb">
+                                    <i class="fa fa-caret-up"></i>
+                                    <li><a href="pagelistTour.html">Tour Miền Nam</a></li>
+                                    <li><a href="pagelistTour.html">Đông Miền Bắc</a></li>
+                                    <li><a href="pagelistTour.html">Tour Xe Đạp</a></li>
+                                    <li><a href="pagelistTour.html">Tour Leo Núi</a></li>
+                                    <li><a href="pagelistTour.html">Tour Trải Nghiệm</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pageIntro.html">Giới thiệu</a></li>
+                            <li>
+                                <a href="pageExp.html">Cẩm nang<i class="fa fa-angle-down"></i></a>
+                                <ul id="probb">
+                                    <i class="fa fa-caret-up"></i>
+                                    <li><a href="pageExp.html">Kinh nghiệm du lịch</a></li>
+                                    <li><a href="pageExp.html">Những điểm đến</a></li>
+                                    <li><a href="pageExp.html">Thông tin du lịch</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="pageContact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--<> end menu <>-->
+            </header>
+
+
+            <div class="content">
+
+                <div class="container">
+                    <div class="detailCont">
+                        <h3 id="titleDetail">Tour du lịch Đài loan bay Vietnam Airlines ĐÀI BẮC - ĐÀI TRUNG - CAO HÙNG</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="detailLeft">
+                                    <div class="leftTitle">
+                                        <a href="#" id="titlea1">TRANG CHỦ </a> / 
+                                        <a href="#" id="titlea2">TOUR CHÂU Á</a>
+                                    </div>
+
+                                    <h4 id="titleh4">Tour du lịch singapore bay VJ</h4>
+                                    <p>
+                                        Nội dung chi tiết tour
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="detailRight">
+                                    <h5 id="titleh5">Tour du lịch Đài loan bay Vietnam Airlines ĐÀI BẮC - ĐÀI TRUNG - CAO HÙNG</h5>
+                                    <div class="detailTime">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <span>Thời gian:4 ngày 10 đêm</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>Tình Trạng: Thứ 6 hàng tuần</span>
+                                            </div>
+                                        </div>                                      
+                                    </div>
+                                    <div class="pricebook">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p id="price"><b>2,100,000</b> đồng</p>
+                                                <del>Giá gốc: 2,500,000 đồng</del>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p id="kh">Khởi hành ngày: 20/07/2017</p>
+                                                <button id="btn" onclick="show();">book tour ngay</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form id="form">
+                                    <h1>ĐỂ LẠI SĐT ĐỂ NHẬN TƯ VẤN</h1>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <label>Tên khách hàng:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input class="form-control" type="text" placeholder="Nhập họ tên...">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <label>Điện thoại</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input class="form-control" type="text" placeholder="Nhập số điện thoại...">
+                                        </div>
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" value="ĐĂNG KÝ">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="tourDay">
+                            <p id="p">
+                                <span id="show">chương trình tour</span>
+                            </p>
+                            <div class="Days">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="dayLeft">
+                                            <p class="activetour jq" id="tourp">
+                                                ngày 1
+                                                <i class="fa fa-caret-left" id="caret1"></i>
+                                            </p>
+                                            <p class="jq" id="tourp1">
+                                                ngày 2
+                                                <i class="fa fa-caret-left" id="caret2"></i>
+                                            </p>
+                                            <p class="jq" id="tourp2">
+                                                ngày 3
+                                                <i class="fa fa-caret-left" id="caret3"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="dayRight">
+                                            <div class="dayright1 as">
+                                                Nội dung ngày 1
+                                            </div>
+                                            <div class="dayright2 as">
+                                                Nội dung ngày 2
+                                            </div>
+                                            <div class="dayright3 as">
+                                                Nội dung ngày 3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabDetailtour">
+                            <p>
+                                <span>
+                                    <button class="tab1 activetabs tb">
+                                        giá bao gồm
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <button class="tab2 tb">
+                                        không bao gồm
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <button class="tab3 tb">
+                                        Quy định tour
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                </span>
+                            </p>
+                            <div class="tabCont">
+                                <p class="ndt nt1">Nội dung tab1</p>
+                                <p class="ndt nt2">Nội dung tab2</p>
+                                <p class="ndt nt3">Nội dung tab3</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="Tours" style="background: white;border-top: 1px solid #ccc;">
+                        <h1 id="tourmore">TOUR LIÊN QUAN</h1>
+                        <div class="listTour">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="listtourItem tourpageList">
+                                        <a href="#" id="imgsale">
+                                            <img src="images/imgSlid1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="#" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem tourpageList">
+                                        <a href="#" id="imgsale">
+                                            <img src="images/imgSlid1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="#" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem tourpageList">
+                                        <a href="#" id="imgsale">
+                                            <img src="images/imgSlid1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="#" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="listtourItem tourpageList">
+                                        <a href="#" id="imgsale">
+                                            <img src="images/imgSlid1.jpg">
+                                            <span id="saleTour">-91%</span>
+                                            <span id="monthTour">Tháng 9,10,11</span>
+                                        </a>
+                                        <div class="listtourCont">
+                                            <p class="typeTour">
+                                                tour châu á
+                                            </p>
+                                            <a href="#" class="typeName">
+                                                tour du lịch cửu trại câu - mâu ni câu - thành đô 5 ngày 4 đêm
+                                            </a>
+                                            <div class="timePrice">
+                                                <div class="time">
+                                                    <p>
+                                                        <i class="fa fa-times"></i>
+                                                        11 ngày 10 đêm
+                                                    </p>
+                                                    <p>
+                                                        <i class="fa fa-calendar"></i>
+                                                        19/07/2017
+                                                    </p>
+                                                </div>
+                                                <div class="price">
+                                                    <del>12,500,000 <u>đ</u></del>
+                                                    <p>1,100,000 <u>đ</u></p>
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<> footer <>-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>về chúng tôi</h2>
+                                <div class="footerCont">
+                                    <a href="#" id="a2">Giới thiệu</a>
+                                    <a href="#" id="a2">Tin tức</a>
+                                    <a href="#" id="a2">Tuyển dụng</a>
+                                    <a href="#" id="a2">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>thông tin cần biết</h2>
+                                <div class="footerCont">
+                                    <a href="#" id="a2">Điều kiện điều khoản</a>
+                                    <a href="#" id="a2">Phương thức thanh toán</a>
+                                    <a href="#" id="a2">Bảo mật thông tin khách hàng</a>
+                                    <a href="#" id="a2">Chính sách quy định</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>liên kết hữu ích</h2>
+                                <div class="footerCont">
+                                    <a href="#" id="a2">Tour Châu Á</a>
+                                    <a href="#" id="a2">Tour Châu Âu</a>
+                                    <a href="#" id="a2">Tour Châu Úc</a>
+                                    <a href="#" id="a2">Tour Việt Nam</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footerItem">
+                                <h2>về chúng tôi</h2>
+                                <div class="footerCont">
+                                    <p id="footPhone">tel <b>092 184 27 67</b></p>
+                                    <p id="footPhone">hotline <b>09 3574 3575</b></p>
+                                    <p id="footTime">từ (7h30 - 18h00) hàng ngày</p>
+
+                                    <span>follow us</span>
+                                    <div class="page">
+                                        <a href="#">
+                                            <img src="images/iconFB.PNG">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/iconVideo.PNG">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/iconYoutube.PNG">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/iconZalo.PNG">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <p>Copyright 2017 &COPY; Một sản phẩm của <a href="#">thietkewebtoanthang.com</a></p>
+                    </div>
+                </div>
+            </footer>
+            <!--<> end footer <>-->
+
+            <!--<> scrollTop <>-->
+            <script src="js/scrollPress.min.js"></script>
+            <!--<> end scrollTop <>-->
+        </div>
+    </body>
+</html>

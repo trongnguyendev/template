@@ -1,0 +1,1161 @@
+* {
+  word-break: break-word;
+}
+.settourFull {
+  display: none;
+  transition: 1s;
+  background: rgba(0,0,0,0.25);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+}
+.settourFull h1 {
+  color: #2865FF;
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  margin: 10px 0;
+}
+.settourFull form {
+  position: relative;
+  background: white;
+  box-shadow: 0px 0px 5px #666666;
+  width: 500px;
+  border: 1px solid #ccc;
+  margin: 31px auto;
+  padding: 5px;
+}
+.settourFull form label {
+  font-size: 14px;
+}
+.settourFull form input[type="text"],
+.settourFull form input[type="number"],
+.settourFull form input[type="date"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+}
+.settourFull form input[type="text"]:focus,
+.settourFull form input[type="number"]:focus,
+.settourFull form input[type="date"]:focus,
+.settourFull form input[type="submit"]:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.settourFull form input[type="submit"] {
+  border: none;
+  background: #1e4cbf;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  margin: 15px 0;
+}
+.settourFull form p {
+  padding: 5px;
+  background: #eee;
+}
+.settourFull form i {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+}
+header .headSlogun {
+  padding: 5px 0;
+  background: #eee;
+}
+header .headSlogun #spanLeft {
+  font-size: 13px;
+}
+header .headSlogun #spanRight {
+  text-align: right;
+}
+header .headSlogun #spanRight #hotline {
+  font-size: 13px;
+}
+header .headSlogun #spanRight #fb-icon {
+  background: #2865FF;
+  padding: 5px 8px;
+  border-radius: 100%;
+  color: white;
+}
+header .headSlogun #spanRight #gg-icon {
+  background: #2865FF;
+  padding: 5px 6px;
+  border-radius: 100%;
+  color: white;
+}
+header .headSlogun #spanRight #tw-icon {
+  background: #2865FF;
+  padding: 5px 6px;
+  border-radius: 100%;
+  color: white;
+}
+header .headerLogo {
+  padding: 20px 10px;
+}
+header .headerLogo a img {
+  width: 320px;
+}
+header .headerMenu {
+  position: relative;
+  background: #2865FF;
+}
+header .headerMenu #menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header .headerMenu #menu > li {
+  position: relative;
+  padding: 10px 5px;
+  margin: 0 10px;
+  display: inline-block;
+}
+header .headerMenu #menu > li >a {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .headerMenu #menu > li >a:hover:after {
+  top: -12px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(253,215,97,0);
+  border-top-color: #FFDDA2;
+  border-width: 7px;
+  bottom: 100%;
+}
+header .headerMenu #menu > li >a:hover {
+  color: #FFDDA2;
+}
+header .headerMenu #menu > li .activeA {
+  color: #FFDDA2;
+}
+header .headerMenu #menu > li .activeA:after {
+  top: -12px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(253,215,97,0);
+  border-top-color: #FFDDA2;
+  border-width: 7px;
+  bottom: 100%;
+}
+header .headerMenu #menu > li >ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 160px;
+  background: #2865FF;
+  border: 1px solid #56adef;
+  z-index: 1111;
+  display: none;
+  padding: 0 10px;
+}
+header .headerMenu #menu > li >ul >li {
+  margin: 11px 0;
+  display: block;
+}
+header .headerMenu #menu > li >ul >li >a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+header .headerMenu #menu > li >ul >li:hover >a {
+  color: #FFDDA2;
+}
+header .headerMenu #menu > li .down2 {
+  position: absolute;
+  top: 0px;
+  left: 90%;
+  font-size: 26px;
+  display: none;
+}
+header .headerMenu #menu >li:hover >ul {
+  display: block;
+}
+header .headerMenu .iconRespon {
+  display: none;
+  padding: 0 10px;
+}
+header .headerMenu .iconRespon span {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  position: relative;
+  top: 6px;
+  text-transform: uppercase;
+}
+header .headerMenu .iconRespon i {
+  float: right;
+  cursor: pointer;
+  padding: 10px;
+  background: #ccc;
+  color: #2865FF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+.content .video .videoCont h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.content .video .videoCont span {
+  color: red;
+}
+.content .video .videoList h1 {
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+.content .video .videoList h1 span {
+  border-bottom: 1px solid red;
+  padding: 10px 0;
+}
+.content .video .videoList .videoItem {
+  text-decoration: none;
+  display: block;
+}
+.content .video .videoList .videoItem img {
+  width: 100%;
+}
+.content .video .videoList .videoItem p {
+  color: #666666;
+  font-size: 13px;
+}
+.content .banner {
+  position: relative;
+}
+.content .banner img {
+  width: 100%;
+}
+.content .banner .bannerSearch {
+  z-index: 1111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 5px 45px;
+}
+.content .banner .bannerSearch input[type="submit"] {
+  border-radius: 20px;
+  border: none;
+  background: #2865ff;
+  color: white;
+  padding: 6px 12px;
+  margin: 10px 0;
+}
+.content .banner .bannerSearch input[type="text"] {
+  margin: 10px 0;
+}
+.content .banner .bannerSearch select {
+  margin: 10px 0;
+}
+.content .bannerImgSpeed {
+  margin: 20px 0;
+}
+.content .bannerImgSpeed #myCarousel {
+  position: relative;
+}
+.content .bannerImgSpeed #myCarousel .item .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  background: rgba(40,101,255,0.49);
+}
+.content .bannerImgSpeed #myCarousel .item .carousel-caption p {
+  color: white;
+  margin: 0;
+}
+.content .bannerImgSpeed #myCarousel .item .carousel-caption p a {
+  color: white;
+  text-decoration: none;
+}
+.content .bannerImgSpeed #myCarousel .item .carousel-caption:hover {
+  background: #2865FF;
+}
+.content .bannerImgSpeed .speedNews h1 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+  color: #2865FF;
+}
+.content .bannerImgSpeed .speedNews .speedCont a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
+.content .bannerImgSpeed .speedNews .speedCont a:before {
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  content: '';
+  background: #2865ff;
+  float: left;
+  position: relative;
+  margin-bottom: 21px;
+  margin-right: 15px;
+  top: 8px;
+}
+.content .bannerImgSpeed .speedNews .speedCont a:hover {
+  color: red;
+}
+.content .bannerImgSpeed .newsSmall {
+  margin: 10px 0;
+}
+.content .bannerImgSpeed .newsSmall .smallItem a {
+  display: block;
+}
+.content .bannerImgSpeed .newsSmall .smallItem a img {
+  width: 100%;
+}
+.content .bannerImgSpeed .newsSmall .smallItem #title {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.content .bannerImgSpeed .newsSmall .smallItem #title:hover {
+  color: red;
+}
+.content .bannerImgSpeed .newsSmall .smallItem span {
+  color: red;
+  font-size: 12px;
+}
+.content .bannerImgSpeed .newsSmall .viewmore {
+  margin: 10px 0;
+  text-align: center;
+}
+.content .bannerImgSpeed .newsSmall .viewmore input[type="button"] {
+  padding: 6px 14px;
+  background: #2865ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.content .bannerImgSpeed .newsSmall .viewmore input[type="button"]:hover {
+  background: orange;
+}
+.content .bannerImgSpeed .More .itemMore {
+  margin: 10px 0;
+  padding: 5px 7px;
+  border: 1px solid #ccc;
+}
+.content .bannerImgSpeed .More .itemMore #icon {
+  margin: 0;
+  text-align: center;
+}
+.content .bannerImgSpeed .More .itemMore i {
+  color: red;
+  font-size: 50px;
+}
+.content .bannerImgSpeed .More .itemMore .itemmoreCont a {
+  text-decoration: none;
+  color: #2865FF;
+  font-weight: bold;
+  font-size: 15px;
+}
+.content .interestingPoint {
+  padding: 15px 0;
+  background: #F5FCFF;
+}
+.content .interestingPoint .Point p {
+  background: #2865FF;
+  position: relative;
+  height: 7px;
+}
+.content .interestingPoint .Point p a {
+  text-decoration: none;
+  color: #2865FF;
+  font-size: 17px;
+  padding: 2px 18px;
+  background: #F5FCFF;
+  position: absolute;
+  top: -10px;
+  left: 23px;
+  font-weight: bold;
+}
+.content .interestingPoint .Point .large-12 {
+  margin: 20px 0;
+}
+.content .interestingPoint .Point .large-12 .item {
+  position: relative;
+}
+.content .interestingPoint .Point .large-12 .item a {
+  display: block;
+}
+.content .interestingPoint .Point .large-12 .item a img {
+  width: 100%;
+}
+.content .interestingPoint .Point .large-12 .item a p {
+  background: none;
+  color: white;
+}
+.content .interestingPoint .Point .large-12 .item #title2 {
+  background: rgba(14,37,95,0.58);
+  padding: 2px 7px;
+  position: absolute;
+  bottom: 0;
+}
+.content .ExpercizeSale .exp h4 {
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  padding: 5px 0;
+  color: #2865FF;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.content .ExpercizeSale .exp h4 a {
+  text-decoration: none;
+}
+.content .ExpercizeSale .exp .expCont #titleDis {
+  font-size: 17px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content .ExpercizeSale .exp .expCont .expItem1 {
+  border: none !important;
+}
+.content .ExpercizeSale .exp .expCont .expItem {
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.content .ExpercizeSale .exp .expCont .expItem #imgexp img {
+  height: auto;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop #imgexp img {
+  height: 170px;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop #imgexp,
+.content .ExpercizeSale .exp .expCont .expItem #imgexp {
+  border: 1px solid #ccc;
+  padding: 2px;
+  display: block;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop #imgexp img,
+.content .ExpercizeSale .exp .expCont .expItem #imgexp img {
+  height: auto;
+  width: 100%;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop #imgexp #imgBig,
+.content .ExpercizeSale .exp .expCont .expItem #imgexp #imgBig {
+  height: 170px;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop .expItemCont a,
+.content .ExpercizeSale .exp .expCont .expItem .expItemCont a {
+  font-size: 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop .expItemCont span,
+.content .ExpercizeSale .exp .expCont .expItem .expItemCont span {
+  font-size: 12px;
+  color: red;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop .expItemCont #page1,
+.content .ExpercizeSale .exp .expCont .expItem .expItemCont #page1 {
+  color: #666666;
+}
+.content .ExpercizeSale .exp .expCont .expItemTop .expItemCont #xt,
+.content .ExpercizeSale .exp .expCont .expItem .expItemCont #xt {
+  color: #2865FF;
+  font-weight: normal;
+  float: right;
+  font-size: 12px;
+  padding: 3px 5px;
+  background: rgba(40,101,255,0.15);
+}
+.content .ExpercizeSale .exp .expCont .expItemTop .expItemCont #pPage,
+.content .ExpercizeSale .exp .expCont .expItem .expItemCont #pPage {
+  line-height: 1.1;
+  margin: 10px 0;
+}
+.content .search {
+  text-align: center;
+  background: #ECF5FF;
+  border: 1px solid rgba(40,101,255,0.26);
+}
+.content .search h2 {
+  margin: 0;
+  border-bottom: 1px solid #56adef;
+  padding: 10px 0;
+  color: #2865FF;
+  font-size: 15px;
+}
+.content .search form {
+  padding: 10px 20px;
+}
+.content .search input[type="text"] {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #56adef;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+.content .search select {
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #56adef;
+  padding: 5px 10px;
+}
+.content .search input[type="submit"] {
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background: #2865FF;
+  padding: 4px 16px;
+}
+.content .Infomedia {
+  margin: 30px 0;
+}
+.content .Infomedia .InfoEvent h4 {
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  padding: 5px 0;
+  color: #2865FF;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.content .Infomedia .InfoEvent .infoeventCont p {
+  color: #2865FF;
+  text-align: center;
+}
+.content .Infomedia .InfoEvent .infoeventCont .infoLeft a,
+.content .Infomedia .InfoEvent .infoeventCont .infoRight a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 5px 0;
+  display: block;
+  padding: 10px 10px;
+  border: 1px solid #2865FF;
+}
+.content .Infomedia .InfoEvent .infoeventCont .infoLeft a:hover,
+.content .Infomedia .InfoEvent .infoeventCont .infoRight a:hover {
+  color: #2865FF;
+}
+.content .Infomedia .supportTravel {
+  text-align: center;
+  background: #ECF5FF;
+  border: 1px solid rgba(40,101,255,0.26);
+}
+.content .Infomedia .supportTravel h5 {
+  padding: 5px 0;
+  color: #2865FF;
+  font-size: 15px;
+}
+.content .Infomedia .supportTravel #name {
+  padding: 5px 0;
+  border-top: 1px solid rgba(40,101,255,0.26);
+  margin: 5px 0;
+}
+.content .Infomedia .supportTravel p {
+  font-size: 11px;
+}
+.content .Infomedia .culinary h4 {
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  padding: 5px 0;
+  color: #2865FF;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.content .Infomedia .culinary .culinaryCont .culinaryItem a {
+  text-decoration: none;
+}
+.content .Infomedia .culinary .culinaryCont .culinaryItem a img {
+  width: 100%;
+}
+.content .Infomedia .culinary .culinaryCont .culinaryItem a span {
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.content .Infomedia .culinary .culinaryCont .culinaryItem a span:hover {
+  color: red;
+}
+.content .Infomedia .exp h4 {
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  padding: 5px 0;
+  color: #2865FF;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.content .Infomedia .exp h4 a {
+  text-decoration: none;
+}
+.content .Infomedia .exp .expCont .expItem {
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.content .Infomedia .exp .expCont .expItem #imgexp img {
+  height: auto;
+}
+.content .Infomedia .exp .expCont .expItemTop {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.content .Infomedia .exp .expCont .expItemTop #imgexp img {
+  height: 170px;
+}
+.content .Infomedia .exp .expCont .expItemTop #imgexp,
+.content .Infomedia .exp .expCont .expItem #imgexp {
+  border: 1px solid #ccc;
+  padding: 2px;
+  display: block;
+}
+.content .Infomedia .exp .expCont .expItemTop #imgexp img,
+.content .Infomedia .exp .expCont .expItem #imgexp img {
+  height: auto;
+  width: 100%;
+}
+.content .Infomedia .exp .expCont .expItemTop #imgexp #imgBig,
+.content .Infomedia .exp .expCont .expItem #imgexp #imgBig {
+  height: 170px;
+}
+.content .Infomedia .exp .expCont .expItemTop .expItemCont a,
+.content .Infomedia .exp .expCont .expItem .expItemCont a {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.content .Infomedia .exp .expCont .expItemTop .expItemCont span,
+.content .Infomedia .exp .expCont .expItem .expItemCont span {
+  font-size: 12px;
+  color: red;
+}
+.content .Infomedia .exp .expCont .expItemTop .expItemCont #xt,
+.content .Infomedia .exp .expCont .expItem .expItemCont #xt {
+  color: #2865FF;
+  font-weight: normal;
+  float: right;
+  font-size: 12px;
+  padding: 3px 5px;
+  background: rgba(40,101,255,0.15);
+}
+.content .Infomedia .restaurant {
+  margin: 30px 0;
+}
+.content .Infomedia .restaurant h1 {
+  color: white;
+  padding: 7px 5px;
+  margin: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #2865FF;
+}
+.content .Infomedia .restaurant .resCont {
+  background: #eee;
+  padding: 5px;
+}
+.content .Infomedia .restaurant .resCont .rescontItem {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+.content .Infomedia .restaurant .resCont .rescontItem #imgRes {
+  display: block;
+}
+.content .Infomedia .restaurant .resCont .rescontItem #imgRes img {
+  width: 100%;
+}
+.content .Infomedia .restaurant .resCont .rescontItem #restitle {
+  color: black;
+}
+.content .Infomedia .restaurant .resCont .rescontItem #restitle span {
+  font-size: 12px;
+  color: #2865FF;
+}
+.content .Infomedia .videoNew {
+  background: #eee;
+  padding: 0 0 10px 0;
+  margin: 10px 0;
+}
+.content .Infomedia .videoNew h2 {
+  font-weight: bold;
+  color: #2865FF;
+  padding: 7px 5px;
+  margin: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.content .Infomedia .videoNew .videoCont .videoItem {
+  padding: 3px;
+}
+.content .Infomedia .videoNew .videoCont .videoItem img {
+  width: 100%;
+}
+.content .Infomedia .videoNew .videoCont .videoItem p {
+  background: #2865FF;
+  padding: 5px;
+  color: white;
+  font-size: 13px;
+}
+.content .Infomedia .readMore {
+  border: 1px solid #2865FF;
+  margin: 30px 0;
+}
+.content .Infomedia .readMore h1 {
+  border-bottom: 1px solid #2865FF;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+  color: black;
+  padding: 10px 7px;
+}
+.content .Infomedia .readMore .readCont .itemread {
+  margin: 10px 0;
+  padding: 10px 7px;
+  border-bottom: 1px solid #2865FF;
+}
+.content .Infomedia .readMore .readCont .itemread span {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: red;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+.content .Infomedia .readMore .readCont .itemread a {
+  text-decoration: none;
+  color: black;
+  font-size: 15x;
+  font-weight: bold;
+}
+.content .Infomedia .readMore .readCont .itemread:last-child {
+  border-bottom: none;
+}
+.content .Infomedia .Tours .ToursHead {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.content .Infomedia .Tours .ToursHead #titleTour1 {
+  margin: 0;
+  font-weight: bold;
+  padding: 5px 0;
+  color: #2865FF;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.content .Infomedia .Tours .ToursHead .listNametour {
+  color: black;
+  text-align: right;
+  padding: 5px 0;
+}
+.content .Infomedia .Tours .ToursHead .listNametour a {
+  color: black;
+  font-size: 14px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem #ImgTour {
+  position: relative;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem #ImgTour img {
+  width: 100%;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem #ImgTour span {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  background: rgba(255,0,0,0.63);
+  padding: 4px 7px;
+  color: white;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont {
+  margin: 10px 0;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #titleDetailhotel {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #star i {
+  color: yellow;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #address {
+  font-size: 13px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #address strong {
+  font-weight: bold;
+  color: #2865FF;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont .Convenient {
+  border: 1px solid #2865FF;
+  background: #ECF5FF;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont .Convenient h1 {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #2865FF;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #price {
+  color: red;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #price1 {
+  padding: 10px;
+  border: 1px solid red;
+  background: rgba(255,0,0,0.08) !important;
+  color: red;
+  font-size: 16px;
+  position: relative;
+  top: 21px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #itemtourtitle {
+  height: 35px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #itemtourtitle:hover {
+  color: red;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: black;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #dattour {
+  text-decoration: none;
+  padding: 7px 10px;
+  background: #2865FF;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont #dattour:hover {
+  background: #56adef;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont .settour {
+  position: relative;
+  top: 20px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont .ctTour p {
+  font-size: 14px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TouritemCont .ctTour p strong {
+  font-size: 13px;
+  color: #072E95;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 20px 0;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .detailSmall {
+  padding: 0 15px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .detailSmall .detailsmallCont {
+  padding: 0 10px;
+  border-left: 5px solid #ccc;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .detailSmall .detailsmallCont #title3 {
+  color: red;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .detailSmall .detailsmallCont #title31 {
+  color: black;
+  font-size: 12px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .detailSmall .detailsmallCont #title31 strong {
+  font-weight: bold;
+  color: black;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .dattour1 {
+  border: 1px solid #2865FF;
+  background: #ECF5FF;
+  padding: 5px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .dattour1 #title4 {
+  margin-right: 15px;
+  font-size: 14px;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .dattour1 #title4 strong {
+  color: red;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .dattour1 input[type="button"] {
+  text-decoration: none;
+  padding: 7px 10px;
+  background: #2865FF;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+}
+.content .Infomedia .Tours .ToursCont .ToursItem .TourcontDetail .dattour1 i {
+  font-size: 20px;
+  color: yellow;
+}
+.content .titlePage {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.content .titlePage a {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.content .titleListpage {
+  font-weight: bold;
+  font-size: 20px;
+}
+.content .mainNewsdetail .sidemainNews {
+  background: #ECF5FF;
+  padding: 5px;
+}
+.content .mainNewsdetail .sidemainNews h1 {
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: #666666;
+}
+.content .mainNewsdetail .sidemainNews .itemsidemainNews {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.content .mainNewsdetail .sidemainNews .itemsidemainNews img {
+  width: 100%;
+}
+.content .mainNewsdetail .sidecontNews .newsMoresmall {
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.content .mainNewsdetail .sidecontNews .newsMoresmall #newsitemSmall {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+}
+.content .mainNewsdetail .sidecontNews .newsMoresmall #newsitemSmall i {
+  color: #815f22;
+  font-size: 5px;
+  margin-right: 5px;
+}
+.content .mainNewsdetail .sidecontNews .newsMoresmall #newsitemSmall:hover {
+  color: black;
+}
+.content .mainNewsdetail .sidecontNews .tagNews {
+  display: block;
+}
+.content .mainNewsdetail .sidecontNews .tagNews a {
+  text-decoration: none;
+  color: #666666;
+  display: block;
+  float: left;
+  margin: 5px;
+  padding: 3px 7px;
+  border: 1px solid #bbb;
+}
+.content .mainNewsdetail .sidecontNews .baivietlienquan h2 {
+  color: black;
+  font-size: 17px;
+}
+.content .mainNewsdetail .sidecontNews .baivietlienquan .item {
+  text-decoration: none;
+  padding: 5px;
+}
+.content .mainNewsdetail .sidecontNews .baivietlienquan .item img {
+  width: 100%;
+}
+.content .mainNewsdetail .sidecontNews .baivietlienquan .item p {
+  color: #666666;
+}
+.content .mainNewsdetail .sidecontNews .baivietlienquan .item p:hover {
+  color: #815f22;
+}
+footer {
+  background: #F4F4F4;
+}
+footer #home {
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  color: black;
+}
+footer .footCont h6 {
+  margin: 20px 0;
+  padding: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+}
+footer .footCont .footItem h1 {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black;
+}
+footer .footCont .footItem a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+}
+footer .footCont .footItem a:before {
+  height: 4px;
+  width: 4px;
+  display: inline-block;
+  content: '';
+  background: #2865ff;
+  float: left;
+  position: relative;
+  margin-bottom: 21px;
+  margin-right: 15px;
+  top: 8px;
+}
+footer .footCont1 {
+  background: #56adef;
+  color: #fff;
+  padding: 30px 0;
+  border-top: 4px double #ededed;
+}
+footer .footCont1 .footItem1 h1 {
+  margin: 10px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  font-weight: bold;
+}
+footer .footCont1 .footItem1 #imgFoot {
+  display: block;
+}
+footer .footCont1 .footItem1 #imgFoot img {
+  width: 100%;
+}
+footer .license {
+  padding: 10px 0;
+  background: #2865FF;
+}
+footer .license p {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+footer .license p a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 992px) {
+  .content .mainNewsdetail .sidemainNews {
+    display: none;
+  }
+  header .headerMenu #menu > li >ul {
+    width: 100%;
+    position: relative;
+  }
+  header .headerMenu #menu > li .down2 {
+    display: block;
+  }
+  header .headSlogun #spanRight {
+    float: left;
+    margin: 5px 0;
+  }
+  header .headerMenu .iconRespon {
+    display: block;
+  }
+  header .headerMenu #menu {
+    z-index: 1111111111;
+    position: absolute;
+    top: 100%;
+    background: #eee;
+    width: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0px 2px 3px;
+  }
+  header .headerMenu #menu > li:hover >ul {
+    display: none;
+  }
+  header .headerMenu #menu > li >ul >li {
+    margin: 0;
+  }
+  header .headerMenu #menu li {
+    padding: 5px 20px;
+  }
+  header .headerMenu #menu li a {
+    color: black;
+  }
+  header .headerMenu {
+    padding: 4px 0;
+  }
+  header .headerMenu #menu > li {
+    display: block;
+  }
+  header .headerMenu #menu > li .activeA:after,
+  header .headerMenu #menu > li a:after {
+    display: none;
+  }
+  .content .banner .bannerSearch {
+    position: relative;
+  }
+  .content .banner .bannerSearch input {
+    margin: 0;
+  }
+  .content .Infomedia .videoNew .videoMore {
+    padding: 0 13px;
+  }
+}
+@media (max-width: 480px) {
+  header .headerLogo a img {
+    width: 200px;
+  }
+  .content .banner .bannerSearch {
+    padding: 3px 4px;
+  }
+  .content .banner .bannerSearch input[type="submit"] {
+    margin: 2px 0;
+  }
+}
